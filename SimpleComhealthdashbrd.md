@@ -1,0 +1,265 @@
+---
+title: "Simple Community Health Dashboard_Example"
+date: "`r Sys.Date()`"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+# Load packages 
+if(require(pacman)) install.packages("pacman")
+pacman::p_load(knitr, here, rmarkdown,flexdashboard, tidyverse, scales, plotly, patchwork,  readr, stringr, forcats, memisc, pyramid, janitor, paletteer, ggsci)
+
+# Load the dataset
+Hypottowndata <- read_csv("../EpidBioRM/Hypottowndata.csv")
+```
+
+## Column
+### Chart A1
+
+```{r, pyramidtownstep1 }
+Hypottowndata1 <- Hypottowndata %>% mutate(Agegr = cut(Ageyrc, breaks = c(0, 4, 9, 14, 19, 24, 29, 34, 39, 44, 49, 54,59, 64, Inf),
+                      labels = c('0-4', '5-9', '10-14', '15-19', '20-24', '25-29', '30-34', '35-39', '40-44', '45-49','50-54', '55-59', '60-64', '>64')))
+
+```
+
+```{r, pyramidtownstep2}
+# To make town population pyramid
+TOWnAgeSexd<-Hypottowndata1 %>% count(Agegr, Sex)
+```
+
+```{r, pyramidtownstep3}
+# Create new subset
+pyramid_data <- 
+  Hypottowndata1 %>% 
+  
+  # Count total cases by age group and gender
+  count(Agegr, Sex, name = "total") %>%  
+  
+  # Create new columns for x-axis values on the plot
+  mutate(
+    # New column with axis values - convert male counts to negative
+    axis_counts = ifelse(Sex == "Male", -total, total),
+    # New column for percentage axis values
+    axis_percent = round(100 * (axis_counts / nrow(Hypottowndata1)), 
+                         digits = 1))
+```
+
+
+```{r, pyramidtownstep4}
+Hypottown_pyramid <- 
+  ggplot() +
+ 
+  geom_col(data = pyramid_data, #specify data to graph
+           aes(
+             x = Agegr,    # indicate x variable
+             y = axis_counts,  # indicate NEGATED y variable
+             fill = Sex))  +   # fill by sex
+  theme_light() +
+  coord_flip()
+```
+
+```{r, pyramidtownstep5}
+max_count <- max(pyramid_data$total)
+```
+
+```{r, pyramidtownstep6}
+custom_axes <- 
+
+# Use previous graph
+  Hypottown_pyramid +
+  
+# Adjust y-axis (total count)  
+  scale_y_continuous(
+
+    # Specify limit of y-axis using max value and making positive and negative
+    limits = c(-max_count, max_count),
+    
+    # Specify the spacing between axis labels
+    breaks = scales::breaks_width(4),
+    
+    # Make axis labels absolute so male labels appear positive
+    labels = abs)
+```
+
+```{r, pyramidtownstep7}
+custom_labels <- 
+  
+# Start with previous demographic pyramid
+  custom_axes +
+  
+# Adjust the labels
+  labs(
+    title = "Town X households by Age and Sex, in Country X, June 2021, 2025",
+    subtitle = "Analysis of a Hypothetical Community Health Data",
+    x = "Age Group",
+    y = "Count", 
+    fill = "Sex",
+    caption = stringr::str_glue("Data are from a Hypothetical data for Exercise \nn = {nrow(Hypottowndata1)}"))
+```
+
+```{r, pyramidtownstep8}
+custom_color_theme <- 
+  
+# Use previous graph
+  custom_labels +
+  
+# Designate colors and legend labels manually
+  scale_fill_manual(
+    
+    # Select color of sex fill
+    values = c("Female" = "lightblue",
+               "Male" = "darkblue"))+
+    
+# Adjust theme settings
+  theme(
+    axis.line = element_line(colour = "black"), # make axis line black
+    plot.title = element_text(hjust = 0.5),     # center title
+    plot.subtitle = element_text(hjust = 0.5),  # center subtitle
+    plot.caption = element_text(hjust = 0,      # format caption text
+                                size = 11, 
+                                face = "italic")) 
+
+print(custom_color_theme)
+```
+
+## Column
+### Table A
+
+```{r, TabSexAgedist}
+# Table of Sex and Age distribution of household members by Districts of town X
+
+t1<-ftable(xtabs(~ District + Sex + Agegr, Hypottowndata1)) 
+
+t2 <- t1 %>%
+  labs( title = "Sex and Age distribution of household members by Districts of town X, country x",
+        subtitle = "A Hypothetical data analyised for Exercise \nn = {nrow(Hypottowndata1)}")
+t2
+```
+
+## Column
+### Chart A2
+
+```{r, Dist_Sexstep1}
+Sumbydistsexd <- Hypottowndata %>% group_by(District, Sex) %>% summarise(n = n())
+```
+
+```{r, Dist_Sexstep2}
+Percbydistsexd  <- Sumbydistsexd %>% 
+mutate(percentage = round((n / sum(n))*100, 1))
+```
+
+```{r, Dist_Sexstep3}
+#Group Bar Chart
+Dist_Sex_Bar_Chart<- ggplot(Percbydistsexd, aes(x = District, y = percentage, fill = Sex)) +
+  geom_col(position = "dodge") +
+  labs(title = "Sex of Household Members in Percent in Districts of town X, Country X",
+       subtitle = "Analysis of a Hypothetical Community Health Data for Exercise (Hypottowndata.csv)",
+       x= "District",
+       y= "Household Members, %") +
+  theme(axis.text.x = element_text(angle = 90)) +
+  coord_flip()
+
+print (Dist_Sex_Bar_Chart)
+```
+
+## Column
+### Chart B 
+
+```{r, Known_Sicknessstep1}
+Sumbydistkndxd <- Hypottowndata %>% group_by(District, Known_Sick) %>% summarise(n = n())
+```
+```{r, Known_Sicknessstep2}
+Percbydistkndxd  <- Sumbydistkndxd %>%
+mutate(percentage = round((n / sum(n))*100, 1))
+```
+```{r, Known_Sicknessstep3}
+#Group Bar Chart
+Known_Sickness_Chart<- ggplot(Percbydistkndxd, aes(x = District, y = percentage, fill = Known_Sick)) +
+  geom_col(position = "dodge") +
+  labs(title = "District Household Members' with Known Sickness in Percent, Town X, Country X",
+       subtitle = "Analysis of a Hypothetical Community Health Data for Exercise (Hypottowndata.csv)",
+       x= "District",
+       y= "Household Members, %") +
+  theme(axis.text.x = element_text(angle = 90))
+Known_Sickness_Chart
+```
+
+## column
+### Chart C
+
+```{r, Current_Sicknessstep1}
+Sumbydistcurskd <- Hypottowndata %>% group_by(District, current_sick) %>% summarise(n = n())
+```
+```{r, Current_Sicknessstep2}
+Percbydistcurskd  <- Sumbydistcurskd %>%
+mutate(percentage = round((n / sum(n))*100, 1))
+```
+```{r, Current_Sicknessstep3}
+#Group Bar Chart
+Current_Sickness_Chart<- ggplot(Percbydistcurskd, aes(x = District, y = percentage, fill = current_sick)) +
+  geom_col(position = "dodge") +
+  labs(title = "District Household Members' with Current Sickness in Percent, Town X, Country X",
+       subtitle = "Analysis of a Hypothetical Community Health Data for Exercise (Hypottowndata.csv)",
+       x= "District",
+       y= "Household Members, %") +
+  theme(axis.text.x = element_text(angle = 90))
+Current_Sickness_Chart
+```
+
+## column
+### Chart D
+
+```{r ,Sought_hfstep1}
+Sumbydistsouhfild <-Hypottowndata %>% filter(sought_hf== c("Yes", "No"))
+```
+```{r,Sought_hfstep2}
+Sumbydistsouhfd <-Sumbydistsouhfild %>% group_by(District, sought_hf) %>% summarise(n=n())
+```
+```{r,Sought_hfstep3}
+Percbydistsouhfd  <- Sumbydistsouhfd %>%
+  mutate(percentage = round((n / sum(n))*100, 1))
+```
+```{r,Sought_hftep4}
+#Group Bar Chart
+Sought_hf_Chart<- ggplot(Percbydistsouhfd, aes(x = District, y = percentage, fill = sought_hf)) +
+  geom_col(position = "dodge") +
+  labs(title = "District Household Members Sought Health Facility for the Current Sickness,Town X, Country X",
+       subtitle = "Analysis of a Hypothetical Community Health Data for Exercise (Hypottowndata.csv)",
+       x= "District",
+       y= "Household Members, %") +
+  theme(axis.text.x = element_text(angle = 90)) +
+  coord_flip()
+Sought_hf_Chart
+```
+## column
+### Chart E
+
+```{r, Main_CHPstep1}
+Sumbydistchpfild <-Hypottowndata %>% filter(Relation_to_hhh == "Household Head")
+```
+```{r, Main_CHPstep2}
+Sumbydistchpd <-Sumbydistchpfild %>% group_by(District, Main_CHP) %>% summarise(n=n())
+```
+```{r,, Main_CHPstep3 }
+Percbydistchpd  <- Sumbydistchpd %>%
+  mutate(percentage = round((n / sum(n))*100, 1)) %>%
+  arrange(by=District, desc(percentage))
+```
+```{r, Main_CHPstep4}
+#Group Bar Chart
+ggplot(Percbydistchpd, aes(x = District, y = percentage,
+                           fill = Main_CHP)) +
+  geom_col(position = "dodge") +
+  labs(title = "District Household Members' Perceived Main Community Health Problems,Town_X, Country X",
+       subtitle = "Analysis of a Hypothetical Community Health Data for Exercise (Hypottowndata.csv)",
+       x= "District",
+       y= "Household Members, %") +
+  theme(axis.text.x = element_text(angle = 90)) +
+  coord_flip()
+Main_CHP_Chart
+```
