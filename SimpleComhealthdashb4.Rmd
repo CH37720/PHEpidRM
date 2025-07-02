@@ -25,9 +25,9 @@ Please try to review this dashboard and email me to work as a team for its impro
 
    *The best comes as a result of collaborative endeavor!*
 
-# Towm X Dashboard {data=navmenu="Town"}
+# Town X Dashboard {data=navmenu="Town"}
 ## Column {data-width=350}
-### **Households based - Towm X Community Health Data Dashboard**
+### **Households based - Town X Community Health Data Dashboard**
 ### Population Pyramid
 
 ```{r, pyramidtownstep1 }
