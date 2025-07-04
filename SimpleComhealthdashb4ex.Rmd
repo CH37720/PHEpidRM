@@ -6,7 +6,8 @@ output:
     orientation: columns
     vertical_layout: fill
 ---
-
+Sidebar {.sidebar}
+==============================
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
@@ -19,16 +20,30 @@ District<-c("1", "2", "3")
 Hypottowndata <- read_csv("../EpidBioRM/Hypottowndata.csv")
 ```
 
-# An Example of Simple Community Health Dashboard (For Exercise)
-### **Call for Action**
-Please try to review this dashboard and email me to work as a team for its improvement. 
+### An Example of Simple Community Health Dashboard (For Exercise)
+
+It is a households based community health data dashboard.
+
+
+
+**Call for Action**
+
+Please try to review this dashboard and let's work as a team for its improvement. You can get my address by clicking at the "Contact Me" menu.
 
    *The best comes as a result of collaborative endeavor!*
 
-# Town X Dashboard {data=navmenu="Town"}
-## Column {data-width=350}
-### **Households based - Town X Community Health Data Dashboard**
-### Population Pyramid
+``````````````````````````````````````````````````````````````````````````
+``````````````````````````````````````````````````````````````````````````
+# 1. Town X Dashboard
+**1. Town X**
+
+You can access the charts and table showing the town X outputs of analysis of the data by clicking their title in the navigation bar.
+
+``````````````````````````````````````````````````````````````````````````
+``````````````````````````````````````````````````````````````````````````
+# 1.1 Population Pyramid
+## column {data-width=350}
+### Chart-1.1 Population Pyramid
 
 ```{r, pyramidtownstep1 }
 Hypottowndata1 <- Hypottowndata %>% mutate(Agegr = cut(Ageyrc, breaks = c(0, 4, 9, 14, 19, 24, 29, 34, 39, 44, 49, 54,59, 64, Inf),
@@ -134,9 +149,9 @@ custom_color_theme <-
                                 face = "italic")) 
  print(custom_color_theme)
 ```
-
+# 1.1 Age and Sex by District
 ## Column {data-width=350, .tabset}
-### Table - Age and Sex by District
+### Table - 1.1 Age and Sex by District
 
 ```{r, TabSexAgedist}
 # Table of Sex and Age distribution of household members by Districts of town X
@@ -149,8 +164,9 @@ t2 <- t1 %>%
 t2
 ```
 
+# 1.2 Sex by District
 ## Column {data-width=350}
-### Chart - Sex by District
+### Chart- 1.2 Sex by District
 
 ```{r, Dist_Sexstep1}
 Sumbydistsexd <- Hypottowndata %>% group_by(District, Sex) %>% summarise(n = n())
@@ -175,8 +191,9 @@ Dist_Sex_Bar_Chart<- ggplot(Percbydistsexd, aes(x = District, y = percentage, fi
 print (Dist_Sex_Bar_Chart)
 ```
 
+# 1.3 Known Sickness 
 ## Column {data-width=350}
-### Chart-Known Sickness 
+### Chart - 1.3 Known Sickness 
 
 ```{r, Known_Sicknessstep1}
 Sumbydistkndxd <- Hypottowndata %>% group_by(District, Known_Sick) %>% summarise(n = n())
@@ -198,8 +215,9 @@ Known_Sickness_Chart<- ggplot(Percbydistkndxd, aes(x = District, y = percentage,
 Known_Sickness_Chart
 ```
 
+# 1.4 Current Sickness (symptoms)
 ## column {data-width=350}
-### Chart- Current Sickness (symptoms)
+### Chart - 1.4 Current Sickness (symptoms)
 
 ```{r, Current_Sicknessstep1}
 Sumbydistcurskd <- Hypottowndata %>% group_by(District, current_sick) %>% summarise(n = n())
@@ -221,8 +239,9 @@ Current_Sickness_Chart<- ggplot(Percbydistcurskd, aes(x = District, y = percenta
 Current_Sickness_Chart
 ```
 
+# 1.5 Sought Health Facility
 ## column {data-width=350}
-### Chart - Sought Health Facility
+### Chart - 1.5 Sought Health Facility
 
 ```{r ,Sought_hfstep1}
 distsouhfild <-Hypottowndata1 %>% filter(current_sick != "No")
@@ -247,8 +266,9 @@ Sought_hf_Chart<- ggplot(Percbydistsouhfd, aes(x = District, y = percentage, fil
 Sought_hf_Chart
 ```
 
+# 1.6 Main Percieved community health problem
 ## column {data-width=350}
-### Chart - Main Percieved community health problem (Main_PCHP)
+### Chart - 1.6 Main Percieved community health problem (Main_PCHP)
 
 ```{r, Main_PCHPstep1}
 Sumbydistchpfild <-Hypottowndata %>% filter(Relation_to_hhh == "Household Head")
@@ -276,10 +296,16 @@ Main_PCHP_Chart <-
 Main_PCHP_Chart
 ```
 
-# District 1 Dashboard {data=navmenu="District"}
-## column {data-width=350}
-### **Households based - District 1 Community Health Data Dashboard**
-### Chart -1.1 Sex
+# 2. Districts Dashboard
+**Districts**
+
+You can access the charts showing the districts outputs of analysis of the data by clicking their title in the navigation bar.
+
+``````````````````````````````````````````````````````````````````````````
+``````````````````````````````````````````````````````````````````````````
+# 2.1 Sex
+## column {data-width=250}
+### Chart - 2.1 Sex
 
 ```{r, crsexpie}
 crsexpie <- function(district_name) {
@@ -313,8 +339,10 @@ plots<- lapply(District[[1]], crsexpie)
 for(i in seq_along(plots)){print(plots[[1]])
 }
 ```
+
+# 2.2 Known Sickness
 ## Column {data-width=350}
-### Chart-1.2 Known Sickness 
+### Chart-2.2 Known Sickness 
 
 ```{r, crKnSbarch}
 crKnSbarch <- function(district_name) {
@@ -345,8 +373,10 @@ bcharts<- lapply(District[[1]], crKnSbarch)
 for(i in seq_along(bcharts)){print(bcharts[[1]])
 }
 ```
+
+# 2.3 Current Sickness (symptoms)
 ## column {data-width=350}
-### Chart-1.3 Current Sickness (symptoms)
+### Chart-2.3 Current Sickness (symptoms)
 
 ```{r, curSbarch}
 curSbarch <- function(district_name) {
@@ -379,8 +409,10 @@ curSbarchs<- lapply(District[[1]], curSbarch)
 for(i in seq_along(curSbarchs)){print(curSbarchs[[1]])
 }
 ```
-## column {data-width=350}
-### Chart -1.4 Sought Health Facility
+
+# 2.4 Sought Health Facility 
+## column {data-width=250}
+### Chart- 2.4 Sought Health Facility
 
 ```{r, souhfbarch}
 souhfbarch <- function(district_name) {
@@ -410,6 +442,45 @@ Sought_hf_Chart<- ggplot(Percbydistsouhfd0, aes(x = " ", y = percentage, fill = 
 souhfbarchs<- lapply(District[[1]], souhfbarch)
 #Print the bchart
 for(i in seq_along(souhfbarchs)){print(souhfbarchs[[1]])
+}
+```
+
+# 2.5 Main Percieved community health problem
+## column {data-width=350}
+### Chart - 2.5 Main Percieved community health problem (Main_PCHP)
+
+```{r, MPCHPbarch}
+MPCHPbarch <- function(district_name) {
+
+subtowndata0 <- subset(Hypottowndata1, District == district_name)
+
+Sumbydistchpfild0 <-subtowndata0  %>% filter(Relation_to_hhh == "Household Head")
+
+Sumbydistchpd0 <-Sumbydistchpfild0 %>% group_by(Main_PCHP) %>% summarise(n=n())
+
+Percbydistchpd0  <- Sumbydistchpd0 %>%
+  mutate(percentage = round((n / sum(n))*100, 1)) %>%
+  arrange(by=Main_PCHP, desc(percentage))
+
+# Group Bar Chart
+Main_PCHP_Chart <-
+  ggplot(Percbydistchpd0, aes(x = " ", y = percentage,
+                           fill = Main_PCHP)) +
+  geom_col(position = "dodge") +
+  labs(title = paste("District", district_name, "Household Members' Main Perceived Community Health Problem,Town X, Country X"),
+       subtitle = stringr::str_glue("Analysis of a Hypothetical Community Health Data for Exercise \nn = {nrow(Sumbydistchpfild0)} (Hypottowndata.csv)"),
+       x= paste("District", district_name),
+       y= "Household Members, %") +
+  theme(axis.text.x = element_text(angle = 90)) +
+  coord_flip()
+}
+```
+
+```{r MPCHPbarch1}
+#create bchart for the district
+MPCHPbarchs<- lapply(District[[1]], MPCHPbarch)
+#Print the bchart
+for(i in seq_along(MPCHPbarchs)){print(MPCHPbarchs[[1]])
 }
 ```
 
@@ -456,6 +527,14 @@ for(i in seq_along(souhfbarchs)){print(souhfbarchs2[[2]])
 }
 ```
 
+```{r MPCHPbarch2}
+#create bchart for the district
+MPCHPbarchs2<- lapply(District, MPCHPbarch)
+#Print the bchart
+for(i in seq_along(MPCHPbarchs)){print(MPCHPbarchs2[[2]])
+}
+```
+
 # District 3 Dashboard {data=navmenu="District"}
 ## column {data-width=350}
 ### **Households based - District 3 Community Health Data Dashboard**
@@ -494,4 +573,12 @@ souhfbarchs3<- lapply(District, souhfbarch)
 #Print the bchart
 for(i in seq_along(souhfbarchs)){print(souhfbarchs3[[3]])}
 
+```
+
+```{r MPCHPbarch3}
+#create bchart for the district
+MPCHPbarchs3<- lapply(District, MPCHPbarch)
+#Print the bchart
+for(i in seq_along(MPCHPbarchs)){print(MPCHPbarchs3[[3]])
+}
 ```

@@ -6,7 +6,8 @@ output:
     orientation: columns
     vertical_layout: fill
 ---
-
+Sidebar {.sidebar}
+==============================
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
@@ -19,16 +20,26 @@ District<-c("1", "2", "3")
 Hypottowndata <- read_csv("../EpidBioRM/Hypottowndata.csv")
 ```
 
-# An Example of Simple Community Health Dashboard (For Exercise)
-### **Call for Action**
-Please try to review this dashboard and email me to work as a team for its improvement. 
+
+### An Example of Simple Community Health Dashboard (For Exercise)
+
+It is a households based community health data dashboard.
+
+
+
+**Call for Action**
+
+Please try to review this dashboard and let's work as a team for its improvement. You can get my address by clicking at the "Contact Me" menu.
 
    *The best comes as a result of collaborative endeavor!*
 
-# Town X Dashboard {data=navmenu="Town"}
-## Column {data-width=350}
-### **Households based - Town X Community Health Data Dashboard**
-### Population Pyramid
+``````````````````````````````````````````````````````````````````````````
+``````````````````````````````````````````````````````````````````````````
+# Town X Dashboard
+**Town X**
+
+## column {data-width=350}
+### Chart- Population Pyramid
 
 ```{r, pyramidtownstep1 }
 Hypottowndata1 <- Hypottowndata %>% mutate(Agegr = cut(Ageyrc, breaks = c(0, 4, 9, 14, 19, 24, 29, 34, 39, 44, 49, 54,59, 64, Inf),
@@ -232,9 +243,10 @@ Sought_hf_Chart<- ggplot(Percbydistsouhfd, aes(x = District, y = percentage, fil
 Sought_hf_Chart
 ```
 
-# District 1 Dashboard {data=navmenu="District"}
+# District 1 Dashboard
+**District 1**
+
 ## column {data-width=350}
-### **Households based - District 1 Community Health Data Dashboard**
 ### Chart -1.1 Sex
 
 ```{r, crsexpie}
@@ -371,10 +383,11 @@ for(i in seq_along(souhfbarchs)){print(souhfbarchs[[1]])
 }
 ```
 
-# District 2 Dashboard {data=navmenu="District"}
+# District 2 Dashboard
+**District 2**
+
 ## column {data-width=350}
-### **Households based - District 2 Community Health Data Dashboard**
-### Chart -2.1 Sex
+### Chart - Sex
 
 ```{r sexpie2}
 #create a list of plots for each region
@@ -414,9 +427,11 @@ for(i in seq_along(souhfbarchs)){print(souhfbarchs2[[2]])
 }
 ```
 
-# District 3 Dashboard {data=navmenu="District"}
+
+# District 3 Dashboard
+**District 3**
+
 ## column {data-width=350}
-### **Households based - District 3 Community Health Data Dashboard**
 ### Chart -3.1 Sex
 
 ```{r sexpie3}
