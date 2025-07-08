@@ -1,5 +1,5 @@
 ---
-title: "Simple Community Health Dashboard"
+title: "Simple Community Health Dashboard (SCH_Dashboard)"
 author: "Chernet Hailu Mengesha"
 date: "`r Sys.Date()`"
 output: 
@@ -16,6 +16,9 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 if(require(pacman)) install.packages("pacman")
 pacman::p_load(knitr, here, rmarkdown,flexdashboard, tidyverse, DT, scales, plotly, patchwork,  readr, stringr, forcats, memisc, pyramid, janitor, paletteer, ggsci, pwalk, rpivotTable, highcharter, htmltools, Viridis)
 
+## Define-specific version of date()
+date1<- format(Sys.time(), "%b %d,%Y")
+
 # Define district names
 District<-c("1", "2", "3")
 # Load the dataset
@@ -25,9 +28,9 @@ Hypottowndata <- read_csv("../EpidBioRM/Hypottowndata.csv")
 Sidebar {.sidebar}
 ==============================
 
-### An Example of Simple Community Health Dashboard (For Exercise)
+### An Example of Simple Community Health (SCH) Dashboard (For Exercise)
 
-It is a households based community health data dashboard.
+The SCH_Dashboard is a households based community health data dashboard.
 
 Please try to review this dashboard and let's work as a team for its improvement. You can get my address by clicking on the "Contact Me" menu.
 
@@ -112,7 +115,7 @@ custom_labels <-
   
 # Adjust the labels
   labs(
-    title = "Town X households by Age and Sex, in Country X, June 2021, 2025",
+    title = paste("Town X households by Age and Sex", date1),
     subtitle = "Analysis of a Hypothetical Community Health Data",
     x = "Age Group",
     y = "Count", 
@@ -159,7 +162,7 @@ mutate(percentage = round((n / sum(n))*100, 1))
 #Group Bar Chart
 Known_Sickness_Chart<- ggplot(Percbydistkndxd, aes(x = District, y = percentage, fill = Known_Sick)) +
   geom_col(position = "dodge") +
-  labs(title = "Town X Household Members' with Known Sickness by district, Country X",
+  labs(title = paste("Town X Household Members' with Known Sickness by district, Country X", date1),
        subtitle = stringr::str_glue("Analysis of a Hypothetical Community Health Data for Exercise \nn = {nrow(Hypottowndata1)} (Hypottowndata.csv)"),
        x= "District",
        y= "Household Members, %") +
@@ -181,7 +184,7 @@ mutate(percentage = round((n / sum(n))*100, 1))
 #Group Bar Chart
 Current_Sickness_Chart<- ggplot(Percbydistcurskd, aes(x = District, y = percentage, fill = current_sick)) +
   geom_col(position = "dodge") +
-  labs(title = "Town-X Household Members' with Current Sickness(Symtom) by district, Country X",
+  labs(title = paste("Town-X Household Members' with Current Sickness(Symtom) by district, Country X", date1),
        subtitle = stringr::str_glue("Analysis of a Hypothetical Community Health Data for Exercise \nn = {nrow(Hypottowndata1)} (Hypottowndata.csv)"),
        x= "District",
        y= "Household Members, %") +
@@ -207,7 +210,7 @@ Percbydistsouhfd  <- Sumbydistsouhfd %>%
 #Group Bar Chart
 Sought_hf_Chart<- ggplot(Percbydistsouhfd, aes(x = District, y = percentage, fill = sought_hf)) +
   geom_col(position = "dodge") +
-  labs(title = "Town X Household Members Sought Health Facility for the Current Sickness by district, Country X",
+  labs(title = paste("Town X Household Members Sought Health Facility for the Current Sickness by district, Country X", date1),
        subtitle = stringr::str_glue("Analysis of a Hypothetical Community Health Data for Exercise \nn = {nrow(distsouhfild)} (Hypottowndata.csv)"),
        x= "District",
        y= "Household Members, %") +
@@ -216,7 +219,7 @@ Sought_hf_Chart<- ggplot(Percbydistsouhfd, aes(x = District, y = percentage, fil
 Sought_hf_Chart
 ```
 
-### Chart - 1.6 Main Percieved community health problem (Main_PCHP)
+### Chart - Main Percieved community health problem (Main_PCHP)
 
 ```{r}
 Sumbydistchpfild <-Hypottowndata %>% filter(Relation_to_hhh == "Household Head")
@@ -235,7 +238,7 @@ Main_PCHP_Chart <-
   ggplot(Percbydistchpd, aes(x = District, y = percentage,
                            fill = Main_PCHP)) +
   geom_col(position = "dodge") +
-  labs(title = "Town X, District Household Members'Main Perceived Community Health Problem, Country X",
+  labs(title = paste("Town X, District Household Members'Main Perceived Community Health Problem, Country X", date1),
        subtitle = stringr::str_glue("Analysis of a Hypothetical Community Health Data for Exercise \nn = {nrow(Sumbydistchpfild)} (Hypottowndata.csv)"),
        x= "District",
        y= "Household Members, %") +
@@ -246,17 +249,18 @@ Main_PCHP_Chart
 
 # Pivot Table
 
-### Chart - Pivot Table: Sex by Age distribution of household members in town X 
+### Chart - Pivot Table: Sex by Age distribution of household members in town X, country X, `r Sys.Date()` 
 
 ```{r, Pivot Table-Sex by Age}
 # Pivot Table of Sex by and Age distribution of household members in town X
 
-pt1<- rpivotTable(Hypottowndata1,
+pt1<- (rpivotTable(Hypottowndata1,
             aggrigatorName = "Count",
             cols= "Agegr",
             rows= "Sex",
-            renderName= "Heatmap")
+            renderName= "Heatmap"))
 pt1
+
 ```
 
 # District 1 Dashboard
@@ -283,7 +287,7 @@ percentage_pie0 <-
             position = position_stack(vjust = 0.5), # Center the label
             color = "white",
             fontface = "bold") +
-  labs(title = paste("Sex of persons in the households of district", district_name, "town X"),
+  labs(title = paste("Sex of persons in the households of district", district_name, "town X, country X", date1),
        subtitle = stringr::str_glue("Analysis of data \nn = {nrow(subtowndata0)} from a hypothetical data (hypottowndata)")) +
   theme_void()+
   scale_fill_viridis_d()
@@ -316,7 +320,7 @@ mutate(percentage = round((n / sum(n))*100, 1))
 #Group Bar Chart
 Known_Sickness_Chart<- ggplot(Percbydistkndxd0, aes(x = " " , y = percentage, fill = Known_Sick)) +
   geom_col(position = "dodge") +
-  labs(title = paste("District", district_name, "Household Members' with Known Sickness, Town X, Country X"),
+  labs(title = paste("District", district_name, "Household Members' with Known Sickness, Town X, Country X", date1),
        subtitle = stringr::str_glue("Analysis of a Hypothetical Community Health Data for Exercise \nn = {nrow(subtowndata0)} (Hypottowndata.csv)"),
        x= "Known_Sickness",
        y= "Household Members, %") +
@@ -348,7 +352,7 @@ mutate(percentage = round((n / sum(n))*100, 1))
 #Group Bar Chart
 Current_Sickness_Chart<- ggplot(Percbydistcurskd0, aes(x = " ", y = percentage, fill = current_sick)) +
   geom_col(position = "dodge") +
-  labs(title = paste("District", district_name, "Household Members' with Current Sickness, Town X, Country X"),
+  labs(title = paste("District", district_name, "Household Members' with Current Sickness, Town X, Country X", date1),
        subtitle = stringr::str_glue("Analysis of a Hypothetical Community Health Data for Exercise \nn = {nrow(subtowndata0)} (Hypottowndata.csv)"),
        x= paste("District", district_name),
        y= "Household Members, %") +
@@ -385,7 +389,7 @@ Percbydistsouhfd0  <- Sumbydistsouhfd0 %>%
 #Group Bar Chart
 Sought_hf_Chart<- ggplot(Percbydistsouhfd0, aes(x = " ", y = percentage, fill = sought_hf)) +
   geom_col(position = "dodge") +
-  labs(title = paste("District", district_name, "Household Members' Sought Health Facility for the Current Sickness, Town X, Country X"),
+  labs(title = paste("District", district_name, "Household Members' Sought Health Facility for the Current Sickness, Town X, Country X", date1),
        subtitle = stringr::str_glue("Analysis of a Hypothetical Community Health Data for Exercise \nn = {nrow(distsouhfild0)} (Hypottowndata.csv)"),
        x= paste("District", district_name),
        y= "Household Members, %") +
@@ -421,7 +425,7 @@ Main_PCHP_Chart <-
   ggplot(Percbydistchpd0, aes(x = " ", y = percentage,
                            fill = Main_PCHP)) +
   geom_col(position = "dodge") +
-  labs(title = paste("District", district_name, "Household Members' Main Perceived Community Health Problem,Town X, Country X"),
+  labs(title = paste("District", district_name, "Household Members' Main Perceived Community Health Problem,Town X, Country X", date1),
        subtitle = stringr::str_glue("Analysis of a Hypothetical Community Health Data for Exercise \nn = {nrow(Sumbydistchpfild0)} (Hypottowndata.csv)"),
        x= paste("District", district_name),
        y= "Household Members, %") +
@@ -442,7 +446,7 @@ for(i in seq_along(MPCHPbarchs)){print(MPCHPbarchs[[1]])
 
 ## Column {.tabset data-width=500}
 
-### Chart - Sex
+### Chart - 2.1 Sex
 
 ```{r sexpie2}
 #create a list of plots for each region
@@ -552,7 +556,7 @@ for(i in seq_along(MPCHPbarchs)){print(MPCHPbarchs3[[3]])
 
 # Data Table
 
-### Chart - Data Table of My Hypothetical Community Health Data of Town-X with with its three Districts (named as 1, 2 and 3)
+### Chart - Data Table of My Hypothetical Community Health Data of Town-X with its three Districts (named as 1, 2 and 3), Country x, `r Sys.Date()`
 
 
 ```{r, mydttable}
