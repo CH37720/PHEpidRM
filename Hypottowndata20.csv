@@ -1,0 +1,631 @@
+Assess't_Year,Assess_month,Reporting_date,District,hhID,hh_size,personID,Relation_to_hhh,Age_Month,Age_Yr,Ageyrc,Sex,Edu_level,Known_Sick,current_sick,sought_hf,Main_PCHP
+2025,January,"Jan 31, 2025",1,1,2,1,Household Head,,38,38.0,Female,Above secondary school,No,No,,Respiratory problem
+2025,February,"Feb 28, 2025",1,1,2,1,Household Head,,38,38.0,Female,Above secondary school,No,No,,Respiratory problem
+2025,March,"Mar 31, 2025",1,1,2,1,Household Head,,38,38.0,Female,Above secondary school,No,No,,Respiratory problem
+2025,April,"Apr 30, 2025",1,1,2,1,Household Head,,38,38.0,Female,Above secondary school,No,No,,Respiratory problem
+2025,May,"May 31, 2025",1,1,2,1,Household Head,,38,38.0,Female,Above secondary school,Heart problem,No,,Respiratory problem
+2025,June,"Jun 30, 2025",1,1,2,1,Household Head,,38,38.0,Female,Above secondary school,Heart problem,No,,Respiratory problem
+2025,March,"Mar 31, 2025",1,1,2,2,Child,1,,0.1,Male,,No,No,,
+2025,April,"Apr 30, 2025",1,1,2,2,Child,2,,0.2,Male,,No,No,,
+2025,May,"May 31, 2025",1,1,2,2,Child,3,,0.3,Male,,No,No,,
+2025,June,"Jun 30, 2025",1,1,2,2,Child,4,,0.3,Male,,No,No,,
+2025,January,"Jan 31, 2025",1,2,3,3,Household Head,,40,40.0,Male,Above secondary school,No,Other,Yes,Other
+2025,February,"Feb 28, 2025",1,2,3,3,Household Head,,40,40.0,Male,Above secondary school,No,Other,Yes,Other
+2025,March,"Mar 31, 2025",1,2,3,3,Household Head,,40,40.0,Male,Above secondary school,No,Other,Yes,Theft of resources impacting health
+2025,April,"Apr 30, 2025",1,2,3,3,Household Head,,40,40.0,Male,Above secondary school,No,Other,Yes,Theft of resources impacting health
+2025,May,"May 31, 2025",1,2,3,3,Household Head,,40,40.0,Male,Above secondary school,Hypertension,Other,Yes,Theft of resources impacting health
+2025,June,"Jun 30, 2025",1,2,3,3,Household Head,,40,40.0,Male,Above secondary school,Hypertension,Other,Yes,Theft of resources impacting health
+2025,January,"Jan 31, 2025",1,2,3,4,Wife,,30,30.0,Female,Above secondary school,Asthma (CORP),No,,
+2025,February,"Feb 28, 2025",1,2,3,4,Wife,,30,30.0,Female,Above secondary school,Asthma (CORP),No,,
+2025,March,"Mar 31, 2025",1,2,3,4,Wife,,30,30.0,Female,Above secondary school,Asthma (CORP),No,,
+2025,April,"Apr 30, 2025",1,2,3,4,Wife,,30,30.0,Female,Above secondary school,Asthma (CORP),No,,
+2025,May,"May 31, 2025",1,2,3,4,Wife,,30,30.0,Female,Above secondary school,Asthma (CORP),No,,
+2025,June,"Jun 30, 2025",1,2,3,4,Wife,,30,30.0,Female,Above secondary school,Asthma (CORP),No,,
+2025,January,"Jan 31, 2025",1,2,3,5,Child,3,,0.3,Male,,No,No,,
+2025,February,"Feb 28, 2025",1,2,3,5,Child,4,,0.3,Male,,No,No,,
+2025,March,"Mar 31, 2025",1,2,3,5,Child,5,,0.4,Male,,No,No,,
+2025,April,"Apr 30, 2025",1,2,3,5,Child,6,,0.5,Male,,No,No,,
+2025,May,"May 31, 2025",1,2,3,5,Child,7,,0.6,Male,,No,No,,
+2025,June,"Jun 30, 2025",1,2,3,5,Child,8,,0.7,Male,,No,No,,
+2025,January,"Jan 31, 2025",1,3,4,6,Household Head,,43,43.0,Male,Above secondary school,No,No,,Sanitation problem
+2025,February,"Feb 28, 2025",1,3,4,6,Household Head,,43,43.0,Male,Above secondary school,No,No,,Sanitation problem
+2025,March,"Mar 31, 2025",1,3,4,6,Household Head,,43,43.0,Male,Above secondary school,Hypertension,No,,Sanitation problem
+2025,April,"Apr 30, 2025",1,3,4,6,Household Head,,43,43.0,Male,Above secondary school,Hypertension,No,,Sanitation problem
+2025,May,"May 31, 2025",1,3,4,6,Household Head,,43,43.0,Male,Above secondary school,Hypertension,Only Cough,Yes,Sanitation problem
+2025,June,"Jun 30, 2025",1,3,4,6,Household Head,,43,43.0,Male,Above secondary school,Hypertension,Only Cough,Yes,Sanitation problem
+2025,January,"Jan 31, 2025",1,3,4,7,Wife,,32,32.0,Female,Above secondary school,No,No,,
+2025,February,"Feb 28, 2025",1,3,4,7,Wife,,32,32.0,Female,Above secondary school,No,No,,
+2025,March,"Mar 31, 2025",1,3,4,7,Wife,,32,32.0,Female,Above secondary school,No,No,,
+2025,April,"Apr 30, 2025",1,3,4,7,Wife,,32,32.0,Female,Above secondary school,No,No,,
+2025,May,"May 31, 2025",1,3,4,7,Wife,,32,32.0,Female,Above secondary school,No,No,,
+2025,June,"Jun 30, 2025",1,3,4,7,Wife,,32,32.0,Female,Above secondary school,No,No,,
+2025,January,"Jan 31, 2025",1,3,4,8,Child,31,,3.0,Female,,No,No,,
+2025,February,"Feb 28, 2025",1,3,4,8,Child,32,,3.0,Female,,No,No,,
+2025,March,"Mar 31, 2025",1,3,4,8,Child,33,,3.0,Female,,No,No,,
+2025,April,"Apr 30, 2025",1,3,4,8,Child,34,,3.0,Female,,No,No,,
+2025,May,"May 31, 2025",1,3,4,8,Child,35,,3.0,Female,,No,Only Fever,Yes,
+2025,June,"Jun 30, 2025",1,3,4,8,Child,36,,3.0,Female,,No,Only Fever,Yes,
+2025,January,"Jan 31, 2025",1,3,4,9,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,February,"Feb 28, 2025",1,3,4,9,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,March,"Mar 31, 2025",1,3,4,9,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,April,"Apr 30, 2025",1,3,4,9,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,May,"May 31, 2025",1,3,4,9,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,June,"Jun 30, 2025",1,3,4,9,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,January,"Jan 31, 2025",1,4,5,10,Household Head,,45,45.0,Male,Above secondary school,Diabetes Mellitus,No,,Theft of resources impacting health
+2025,February,"Feb 28, 2025",1,4,5,10,Household Head,,45,45.0,Male,Above secondary school,Diabetes Mellitus,No,,Theft of resources impacting health
+2025,March,"Mar 31, 2025",1,4,5,10,Household Head,,45,45.0,Male,Above secondary school,Diabetes Mellitus,No,,Theft of resources impacting health
+2025,April,"Apr 30, 2025",1,4,5,10,Household Head,,45,45.0,Male,Above secondary school,Diabetes Mellitus,No,,Theft of resources impacting health
+2025,May,"May 31, 2025",1,4,5,10,Household Head,,45,45.0,Male,Above secondary school,Diabetes Mellitus,No,,Theft of resources impacting health
+2025,June,"Jun 30, 2025",1,4,5,10,Household Head,,45,45.0,Male,Above secondary school,Diabetes Mellitus,No,,Theft of resources impacting health
+2025,January,"Jan 31, 2025",1,4,5,11,Wife,,34,34.0,Female,Above secondary school,Asthma (CORP),No,,
+2025,February,"Feb 28, 2025",1,4,5,11,Wife,,34,34.0,Female,Above secondary school,Asthma (CORP),No,,
+2025,March,"Mar 31, 2025",1,4,5,11,Wife,,34,34.0,Female,Above secondary school,Asthma (CORP),No,,
+2025,April,"Apr 30, 2025",1,4,5,11,Wife,,34,34.0,Female,Above secondary school,Asthma (CORP),No,,
+2025,May,"May 31, 2025",1,4,5,11,Wife,,34,34.0,Female,Above secondary school,Asthma (CORP),diarrhea,Yes,
+2025,June,"Jun 30, 2025",1,4,5,11,Wife,,34,34.0,Female,Above secondary school,Asthma (CORP),diarrhea,Yes,
+2025,January,"Jan 31, 2025",1,4,5,12,Child,,9,9.0,Male,Primary school,No,No,,
+2025,February,"Feb 28, 2025",1,4,5,12,Child,,9,9.0,Male,Primary school,No,No,,
+2025,March,"Mar 31, 2025",1,4,5,12,Child,,9,9.0,Male,Primary school,No,No,,
+2025,April,"Apr 30, 2025",1,4,5,12,Child,,9,9.0,Male,Primary school,No,No,,
+2025,May,"May 31, 2025",1,4,5,12,Child,,9,9.0,Male,Primary school,No,No,,
+2025,June,"Jun 30, 2025",1,4,5,12,Child,,9,9.0,Male,Primary school,No,No,,
+2025,January,"Jan 31, 2025",1,4,5,13,Child,,14,14.0,Female,Primary school,No,No,,
+2025,February,"Feb 28, 2025",1,4,5,13,Child,,14,14.0,Female,Primary school,No,No,,
+2025,March,"Mar 31, 2025",1,4,5,13,Child,,14,14.0,Female,Primary school,No,No,,
+2025,April,"Apr 30, 2025",1,4,5,13,Child,,14,14.0,Female,Primary school,No,No,,
+2025,May,"May 31, 2025",1,4,5,13,Child,,14,14.0,Female,Primary school,No,No,,
+2025,June,"Jun 30, 2025",1,4,5,13,Child,,14,14.0,Female,Primary school,No,No,,
+2025,January,"Jan 31, 2025",1,4,5,14,Relative,,70,70.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,February,"Feb 28, 2025",1,4,5,14,Relative,,70,70.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,March,"Mar 31, 2025",1,4,5,14,Relative,,70,70.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,April,"Apr 30, 2025",1,4,5,14,Relative,,70,70.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,May,"May 31, 2025",1,4,5,14,Relative,,70,70.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,June,"Jun 30, 2025",1,4,5,14,Relative,,70,70.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,January,"Jan 31, 2025",1,5,6,15,Household Head,,50,50.0,Male,Above secondary school,Other,No,,Theft of resources impacting health
+2025,February,"Feb 28, 2025",1,5,6,15,Household Head,,50,50.0,Male,Above secondary school,Other,No,,Theft of resources impacting health
+2025,March,"Mar 31, 2025",1,5,6,15,Household Head,,50,50.0,Male,Above secondary school,Other,No,,Theft of resources impacting health
+2025,April,"Apr 30, 2025",1,5,6,15,Household Head,,50,50.0,Male,Above secondary school,Other,No,,Theft of resources impacting health
+2025,May,"May 31, 2025",1,5,6,15,Household Head,,50,50.0,Male,Above secondary school,Other,No,,Theft of resources impacting health
+2025,June,"Jun 30, 2025",1,5,6,15,Household Head,,50,50.0,Male,Above secondary school,Other,No,,Theft of resources impacting health
+2025,January,"Jan 31, 2025",1,5,6,16,Wife,,41,41.0,Female,Secondary schoo,Hypertension,Only Cough,No,
+2025,February,"Feb 28, 2025",1,5,6,16,Wife,,41,41.0,Female,Secondary schoo,Hypertension,Only Cough,No,
+2025,March,"Mar 31, 2025",1,5,6,16,Wife,,41,41.0,Female,Secondary schoo,Hypertension,Only Cough,No,
+2025,April,"Apr 30, 2025",1,5,6,16,Wife,,41,41.0,Female,Secondary schoo,Hypertension,Only Cough,No,
+2025,May,"May 31, 2025",1,5,6,16,Wife,,41,41.0,Female,Secondary schoo,Hypertension,Only Cough,No,
+2025,June,"Jun 30, 2025",1,5,6,16,Wife,,41,41.0,Female,Secondary schoo,Hypertension,Only Cough,No,
+2025,January,"Jan 31, 2025",1,5,6,17,Child,45,,3.8,Male,Able to read and write,No,No,,
+2025,February,"Feb 28, 2025",1,5,6,17,Child,46,,3.8,Male,Able to read and write,No,No,,
+2025,March,"Mar 31, 2025",1,5,6,17,Child,47,,3.9,Male,Able to read and write,No,No,,
+2025,April,"Apr 30, 2025",1,5,6,17,Child,48,,4.0,Male,Able to read and write,No,No,,
+2025,May,"May 31, 2025",1,5,6,17,Child,49,,4.1,Male,Able to read and write,No,No,,
+2025,June,"Jun 30, 2025",1,5,6,17,Child,50,,4.2,Male,Able to read and write,No,No,,
+2025,January,"Jan 31, 2025",1,5,6,18,Child,,5,5.0,Male,Able to read and write,No,No,,
+2025,February,"Feb 28, 2025",1,5,6,18,Child,,5,5.0,Male,Able to read and write,No,No,,
+2025,March,"Mar 31, 2025",1,5,6,18,Child,,5,5.0,Male,Able to read and write,No,No,,
+2025,April,"Apr 30, 2025",1,5,6,18,Child,,5,5.0,Male,Able to read and write,No,No,,
+2025,May,"May 31, 2025",1,5,6,18,Child,,5,5.0,Male,Able to read and write,No,No,,
+2025,June,"Jun 30, 2025",1,5,6,18,Child,,5,5.0,Male,Able to read and write,No,No,,
+2025,January,"Jan 31, 2025",1,5,6,19,Child,,15,15.0,Female,Secondary schoo,No,No,,
+2025,February,"Feb 28, 2025",1,5,6,19,Child,,15,15.0,Female,Secondary schoo,No,No,,
+2025,March,"Mar 31, 2025",1,5,6,19,Child,,15,15.0,Female,Secondary schoo,No,No,,
+2025,April,"Apr 30, 2025",1,5,6,19,Child,,15,15.0,Female,Secondary schoo,No,No,,
+2025,May,"May 31, 2025",1,5,6,19,Child,,15,15.0,Female,Secondary schoo,No,No,,
+2025,June,"Jun 30, 2025",1,5,6,19,Child,,15,15.0,Female,Secondary schoo,No,No,,
+2025,January,"Jan 31, 2025",1,5,6,20,Relative,,14,14.0,Female,Primary school,No,Only Fever,Yes,
+2025,February,"Feb 28, 2025",1,5,6,20,Relative,,14,14.0,Female,Primary school,No,Only Fever,Yes,
+2025,March,"Mar 31, 2025",1,5,6,20,Relative,,14,14.0,Female,Primary school,No,Only Fever,Yes,
+2025,April,"Apr 30, 2025",1,5,6,20,Relative,,14,14.0,Female,Primary school,No,Only Fever,Yes,
+2025,May,"May 31, 2025",1,5,6,20,Relative,,14,14.0,Female,Primary school,No,Only Fever,Yes,
+2025,June,"Jun 30, 2025",1,5,6,20,Relative,,14,14.0,Female,Primary school,No,Only Fever,Yes,
+2025,January,"Jan 31, 2025",1,6,1,21,Household Head,,27,27.0,Male,Above secondary school,No,No,,Other
+2025,February,"Feb 28, 2025",1,6,1,21,Household Head,,27,27.0,Male,Above secondary school,No,No,,Other
+2025,March,"Mar 31, 2025",1,6,1,21,Household Head,,27,27.0,Male,Above secondary school,No,No,,Other
+2025,April,"Apr 30, 2025",1,6,1,21,Household Head,,27,27.0,Male,Above secondary school,No,No,,Other
+2025,May,"May 31, 2025",1,6,1,21,Household Head,,27,27.0,Male,Above secondary school,No,No,,Theft of resources impacting health
+2025,June,"Jun 30, 2025",1,6,1,21,Household Head,,27,27.0,Male,Above secondary school,No,No,,Theft of resources impacting health
+2025,January,"Jan 31, 2025",1,7,1,22,Household Head,,33,33.0,Male,Above secondary school,No,No,,Theft of resources impacting health
+2025,February,"Feb 28, 2025",1,7,1,22,Household Head,,33,33.0,Male,Above secondary school,No,No,,Theft of resources impacting health
+2025,March,"Mar 31, 2025",1,7,1,22,Household Head,,33,33.0,Male,Above secondary school,Heart problem,No,,Theft of resources impacting health
+2025,April,"Apr 30, 2025",1,7,1,22,Household Head,,33,33.0,Male,Above secondary school,Heart problem,No,,Theft of resources impacting health
+2025,May,"May 31, 2025",1,7,1,22,Household Head,,33,33.0,Male,Above secondary school,Heart problem,No,,Theft of resources impacting health
+2025,June,"Jun 30, 2025",1,7,1,22,Household Head,,33,33.0,Male,Above secondary school,Heart problem,No,,Theft of resources impacting health
+2025,January,"Jan 31, 2025",1,8,2,23,Household Head,,28,28.0,Male,Above secondary school,Asthma (CORP),No,,Sanitation problem
+2025,February,"Feb 28, 2025",1,8,2,23,Household Head,,28,28.0,Male,Above secondary school,Asthma (CORP),No,,Sanitation problem
+2025,March,"Mar 31, 2025",1,8,2,23,Household Head,,28,28.0,Male,Above secondary school,Asthma (CORP),No,,Sanitation problem
+2025,April,"Apr 30, 2025",1,8,2,23,Household Head,,28,28.0,Male,Above secondary school,Asthma (CORP),No,,Sanitation problem
+2025,May,"May 31, 2025",1,8,2,23,Household Head,,28,28.0,Male,Above secondary school,Asthma (CORP),No,,Sanitation problem
+2025,June,"Jun 30, 2025",1,8,2,23,Household Head,,28,28.0,Male,Above secondary school,Asthma (CORP),No,,Sanitation problem
+2025,January,"Jan 31, 2025",1,8,2,24,Wife,,24,24.0,Female,Above secondary school,No,No,,
+2025,February,"Feb 28, 2025",1,8,2,24,Wife,,24,24.0,Female,Above secondary school,No,No,,
+2025,March,"Mar 31, 2025",1,8,2,24,Wife,,24,24.0,Female,Above secondary school,No,diarrhea,No,
+2025,April,"Apr 30, 2025",1,8,2,24,Wife,,24,24.0,Female,Above secondary school,No,diarrhea,No,
+2025,May,"May 31, 2025",1,8,2,24,Wife,,24,24.0,Female,Above secondary school,No,diarrhea,No,
+2025,June,"Jun 30, 2025",1,8,2,24,Wife,,24,24.0,Female,Above secondary school,No,diarrhea,No,
+2025,January,"Jan 31, 2025",1,9,3,25,Household Head,,29,29.0,Male,Above secondary school,No,No,,Respiratory problem
+2025,February,"Feb 28, 2025",1,9,3,25,Household Head,,29,29.0,Male,Above secondary school,No,No,,Respiratory problem
+2025,March,"Mar 31, 2025",1,9,3,25,Household Head,,29,29.0,Male,Above secondary school,No,No,,Respiratory problem
+2025,April,"Apr 30, 2025",1,9,3,25,Household Head,,29,29.0,Male,Above secondary school,No,No,,Respiratory problem
+2025,May,"May 31, 2025",1,9,3,25,Household Head,,29,29.0,Male,Above secondary school,No,No,,Respiratory problem
+2025,June,"Jun 30, 2025",1,9,3,25,Household Head,,29,29.0,Male,Above secondary school,No,No,,Respiratory problem
+2025,January,"Jan 31, 2025",1,9,3,26,Wife,,25,25.0,Female,Secondary schoo,No,No,,
+2025,February,"Feb 28, 2025",1,9,3,26,Wife,,25,25.0,Female,Secondary schoo,No,No,,
+2025,March,"Mar 31, 2025",1,9,3,26,Wife,,25,25.0,Female,Secondary schoo,No,No,,
+2025,April,"Apr 30, 2025",1,9,3,26,Wife,,25,25.0,Female,Secondary schoo,No,No,,
+2025,May,"May 31, 2025",1,9,3,26,Wife,,25,25.0,Female,Secondary schoo,No,No,,
+2025,June,"Jun 30, 2025",1,9,3,26,Wife,,25,25.0,Female,Secondary schoo,No,No,,
+2025,January,"Jan 31, 2025",1,9,3,27,Child,,6,6.0,Female,Able to read and write,No,No,,
+2025,February,"Feb 28, 2025",1,9,3,27,Child,,6,6.0,Female,Able to read and write,No,No,,
+2025,March,"Mar 31, 2025",1,9,3,27,Child,,6,6.0,Female,Able to read and write,No,No,,
+2025,April,"Apr 30, 2025",1,9,3,27,Child,,6,6.0,Female,Able to read and write,No,No,,
+2025,May,"May 31, 2025",1,9,3,27,Child,,6,6.0,Female,Able to read and write,No,Fever and Cough ,Yes,
+2025,June,"Jun 30, 2025",1,9,3,27,Child,,6,6.0,Female,Able to read and write,No,Fever and Cough ,Yes,
+2025,January,"Jan 31, 2025",1,10,4,28,Household Head,,39,39.0,Male,Above secondary school,Hypertension,No,,Drinking water problem
+2025,February,"Feb 28, 2025",1,10,4,28,Household Head,,39,39.0,Male,Above secondary school,Hypertension,No,,Drinking water problem
+2025,March,"Mar 31, 2025",1,10,4,28,Household Head,,39,39.0,Male,Above secondary school,Hypertension,No,,Drinking water problem
+2025,April,"Apr 30, 2025",1,10,4,28,Household Head,,39,39.0,Male,Above secondary school,Hypertension,No,,Drinking water problem
+2025,May,"May 31, 2025",1,10,4,28,Household Head,,39,39.0,Male,Above secondary school,Hypertension,No,,Drinking water problem
+2025,June,"Jun 30, 2025",1,10,4,28,Household Head,,39,39.0,Male,Above secondary school,Hypertension,No,,Drinking water problem
+2025,January,"Jan 31, 2025",1,10,4,29,Wife,,33,33.0,Female,Above secondary school,No,No,,
+2025,February,"Feb 28, 2025",1,10,4,29,Wife,,33,33.0,Female,Above secondary school,No,No,,
+2025,March,"Mar 31, 2025",1,10,4,29,Wife,,33,33.0,Female,Above secondary school,No,No,,
+2025,April,"Apr 30, 2025",1,10,4,29,Wife,,33,33.0,Female,Above secondary school,No,No,,
+2025,May,"May 31, 2025",1,10,4,29,Wife,,33,33.0,Female,Above secondary school,No,No,,
+2025,June,"Jun 30, 2025",1,10,4,29,Wife,,33,33.0,Female,Above secondary school,No,No,,
+2025,January,"Jan 31, 2025",1,10,4,30,Child,49,,4.1,Female,Able to read and write,No,Only Cough,Yes,
+2025,February,"Feb 28, 2025",1,10,4,30,Child,50,,4.2,Female,Able to read and write,No,Only Cough,Yes,
+2025,March,"Mar 31, 2025",1,10,4,30,Child,51,,4.3,Female,Able to read and write,No,Only Cough,Yes,
+2025,April,"Apr 30, 2025",1,10,4,30,Child,52,,4.3,Female,Able to read and write,No,Only Cough,Yes,
+2025,May,"May 31, 2025",1,10,4,30,Child,53,,4.4,Female,Able to read and write,No,Only Cough,Yes,
+2025,June,"Jun 30, 2025",1,10,4,30,Child,54,,4.5,Female,Able to read and write,No,Only Cough,Yes,
+2025,January,"Jan 31, 2025",1,10,4,31,Child,,10,10.0,Male,Primary school,No,No,,
+2025,February,"Feb 28, 2025",1,10,4,31,Child,,10,10.0,Male,Primary school,No,No,,
+2025,March,"Mar 31, 2025",1,10,4,31,Child,,10,10.0,Male,Primary school,No,No,,
+2025,April,"Apr 30, 2025",1,10,4,31,Child,,10,10.0,Male,Primary school,No,No,,
+2025,May,"May 31, 2025",1,10,4,31,Child,,10,10.0,Male,Primary school,No,No,,
+2025,June,"Jun 30, 2025",1,10,4,31,Child,,10,10.0,Male,Primary school,No,No,,
+2025,January,"Jan 31, 2025",2,11,1,32,Household Head,,37,37.0,Male,Above secondary school,No,No,,Air pollution 
+2025,February,"Feb 28, 2025",2,11,1,32,Household Head,,37,37.0,Male,Above secondary school,No,No,,Air pollution 
+2025,March,"Mar 31, 2025",2,11,1,32,Household Head,,37,37.0,Male,Above secondary school,No,No,,Air pollution 
+2025,April,"Apr 30, 2025",2,11,1,32,Household Head,,37,37.0,Male,Above secondary school,No,No,,Air pollution 
+2025,May,"May 31, 2025",2,11,1,32,Household Head,,37,37.0,Male,Above secondary school,Hypertension,No,,Air pollution 
+2025,June,"Jun 30, 2025",2,11,1,32,Household Head,,37,37.0,Male,Above secondary school,Hypertension,No,,Air pollution 
+2025,January,"Jan 31, 2025",2,12,2,33,Household Head,,25,25.0,Male,Above secondary school,No,No,,Air pollution 
+2025,February,"Feb 28, 2025",2,12,2,33,Household Head,,25,25.0,Male,Above secondary school,No,No,,Air pollution 
+2025,March,"Mar 31, 2025",2,12,2,33,Household Head,,25,25.0,Male,Above secondary school,No,No,,Air pollution 
+2025,April,"Apr 30, 2025",2,12,2,33,Household Head,,25,25.0,Male,Above secondary school,No,No,,Air pollution 
+2025,May,"May 31, 2025",2,12,2,33,Household Head,,25,25.0,Male,Above secondary school,Other,No,,Air pollution 
+2025,June,"Jun 30, 2025",2,12,2,33,Household Head,,25,25.0,Male,Above secondary school,Other,No,,Air pollution 
+2025,January,"Jan 31, 2025",2,12,2,34,Wife,,18,18.0,Female,Secondary schoo,No,No,,
+2025,February,"Feb 28, 2025",2,12,2,34,Wife,,18,18.0,Female,Secondary schoo,No,No,,
+2025,March,"Mar 31, 2025",2,12,2,34,Wife,,18,18.0,Female,Secondary schoo,No,No,,
+2025,April,"Apr 30, 2025",2,12,2,34,Wife,,18,18.0,Female,Secondary schoo,No,No,,
+2025,May,"May 31, 2025",2,12,2,34,Wife,,18,18.0,Female,Secondary schoo,No,No,,
+2025,June,"Jun 30, 2025",2,12,2,34,Wife,,18,18.0,Female,Secondary schoo,No,No,,
+2025,January,"Jan 31, 2025",2,13,3,35,Household Head,,31,31.0,Male,Above secondary school,No,No,,Air pollution 
+2025,February,"Feb 28, 2025",2,13,3,35,Household Head,,31,31.0,Male,Above secondary school,No,No,,Air pollution 
+2025,March,"Mar 31, 2025",2,13,3,35,Household Head,,31,31.0,Male,Above secondary school,No,No,,Air pollution 
+2025,April,"Apr 30, 2025",2,13,3,35,Household Head,,31,31.0,Male,Above secondary school,No,No,,Air pollution 
+2025,May,"May 31, 2025",2,13,3,35,Household Head,,31,31.0,Male,Above secondary school,No,Fever and Cough ,Yes,Air pollution 
+2025,June,"Jun 30, 2025",2,13,3,35,Household Head,,31,31.0,Male,Above secondary school,No,Fever and Cough ,Yes,Air pollution 
+2025,January,"Jan 31, 2025",2,13,3,36,Wife,,28,28.0,Female,Above secondary school,No,No,,
+2025,February,"Feb 28, 2025",2,13,3,36,Wife,,28,28.0,Female,Above secondary school,No,No,,
+2025,March,"Mar 31, 2025",2,13,3,36,Wife,,28,28.0,Female,Above secondary school,No,No,,
+2025,April,"Apr 30, 2025",2,13,3,36,Wife,,28,28.0,Female,Above secondary school,No,No,,
+2025,May,"May 31, 2025",2,13,3,36,Wife,,28,28.0,Female,Above secondary school,No,Only Fever,No,
+2025,June,"Jun 30, 2025",2,13,3,36,Wife,,28,28.0,Female,Above secondary school,No,Only Fever,No,
+2025,January,"Jan 31, 2025",2,13,3,37,Housemaid,,13,13.0,Female,Primary school,No,No,,
+2025,February,"Feb 28, 2025",2,13,3,37,Housemaid,,13,13.0,Female,Primary school,No,No,,
+2025,March,"Mar 31, 2025",2,13,3,37,Housemaid,,13,13.0,Female,Primary school,No,No,,
+2025,April,"Apr 30, 2025",2,13,3,37,Housemaid,,13,13.0,Female,Primary school,No,No,,
+2025,May,"May 31, 2025",2,13,3,37,Housemaid,,13,13.0,Female,Primary school,No,No,,
+2025,June,"Jun 30, 2025",2,13,3,37,Housemaid,,13,13.0,Female,Primary school,No,No,,
+2025,January,"Jan 31, 2025",2,14,4,38,Household Head,,31,31.0,Male,Above secondary school,No,No,,Drinking water problem
+2025,February,"Feb 28, 2025",2,14,4,38,Household Head,,31,31.0,Male,Above secondary school,No,No,,Drinking water problem
+2025,March,"Mar 31, 2025",2,14,4,38,Household Head,,31,31.0,Male,Above secondary school,No,No,,Drinking water problem
+2025,April,"Apr 30, 2025",2,14,4,38,Household Head,,31,31.0,Male,Above secondary school,No,No,,Drinking water problem
+2025,May,"May 31, 2025",2,14,4,38,Household Head,,31,31.0,Male,Above secondary school,No,No,,Drinking water problem
+2025,June,"Jun 30, 2025",2,14,4,38,Household Head,,31,31.0,Male,Above secondary school,No,No,,Drinking water problem
+2025,January,"Jan 31, 2025",2,14,4,39,Wife,,26,26.0,Female,Above secondary school,No,No,,
+2025,February,"Feb 28, 2025",2,14,4,39,Wife,,26,26.0,Female,Above secondary school,No,No,,
+2025,March,"Mar 31, 2025",2,14,4,39,Wife,,26,26.0,Female,Above secondary school,No,No,,
+2025,April,"Apr 30, 2025",2,14,4,39,Wife,,26,26.0,Female,Above secondary school,No,No,,
+2025,May,"May 31, 2025",2,14,4,39,Wife,,26,26.0,Female,Above secondary school,No,No,,
+2025,June,"Jun 30, 2025",2,14,4,39,Wife,,26,26.0,Female,Above secondary school,No,No,,
+2025,January,"Jan 31, 2025",2,14,4,40,Child,6,,0.5,Male,,No,No,,
+2025,February,"Feb 28, 2025",2,14,4,40,Child,7,,0.6,Male,,No,No,,
+2025,March,"Mar 31, 2025",2,14,4,40,Child,8,,0.7,Male,,No,No,,
+2025,April,"Apr 30, 2025",2,14,4,40,Child,9,,0.8,Male,,No,No,,
+2025,May,"May 31, 2025",2,14,4,40,Child,10,,0.8,Male,,No,No,,
+2025,June,"Jun 30, 2025",2,14,4,40,Child,11,,0.9,Male,,No,No,,
+2025,January,"Jan 31, 2025",2,14,4,41,Child,,5,5.0,Female,Able to read and write,No,No,,
+2025,February,"Feb 28, 2025",2,14,4,41,Child,,5,5.0,Female,Able to read and write,No,No,,
+2025,March,"Mar 31, 2025",2,14,4,41,Child,,5,5.0,Female,Able to read and write,No,No,,
+2025,April,"Apr 30, 2025",2,14,4,41,Child,,5,5.0,Female,Able to read and write,No,No,,
+2025,May,"May 31, 2025",2,14,4,41,Child,,5,5.0,Female,Able to read and write,No,No,,
+2025,June,"Jun 30, 2025",2,14,4,41,Child,,5,5.0,Female,Able to read and write,No,No,,
+2025,January,"Jan 31, 2025",2,15,5,42,Household Head,,41,41.0,Male,Secondary schoo,Diabetes Mellitus,No,,Other
+2025,February,"Feb 28, 2025",2,15,5,42,Household Head,,41,41.0,Male,Secondary schoo,Diabetes Mellitus,No,,Other
+2025,March,"Mar 31, 2025",2,15,5,42,Household Head,,41,41.0,Male,Secondary schoo,Diabetes Mellitus,No,,Other
+2025,April,"Apr 30, 2025",2,15,5,42,Household Head,,41,41.0,Male,Secondary schoo,Diabetes Mellitus,No,,Other
+2025,May,"May 31, 2025",2,15,5,42,Household Head,,41,41.0,Male,Secondary schoo,Diabetes Mellitus,No,,Other
+2025,June,"Jun 30, 2025",2,15,5,42,Household Head,,41,41.0,Male,Secondary schoo,Diabetes Mellitus,No,,Other
+2025,January,"Jan 31, 2025",2,15,5,43,Wife,,37,37.0,Female,Secondary schoo,Heart problem,No,,
+2025,February,"Feb 28, 2025",2,15,5,43,Wife,,37,37.0,Female,Secondary schoo,Heart problem,No,,
+2025,March,"Mar 31, 2025",2,15,5,43,Wife,,37,37.0,Female,Secondary schoo,No,No,,
+2025,April,"Apr 30, 2025",2,15,5,43,Wife,,37,37.0,Female,Secondary schoo,No,No,,
+2025,May,"May 31, 2025",2,15,5,43,Wife,,37,37.0,Female,Secondary schoo,Heart problem,No,,
+2025,June,"Jun 30, 2025",2,15,5,43,Wife,,37,37.0,Female,Secondary schoo,Heart problem,No,,
+2025,January,"Jan 31, 2025",2,15,5,44,Child,29,,2.4,Female,,No,No,,
+2025,February,"Feb 28, 2025",2,15,5,44,Child,30,,2.5,Female,,No,No,,
+2025,March,"Mar 31, 2025",2,15,5,44,Child,31,,2.6,Female,,No,No,,
+2025,April,"Apr 30, 2025",2,15,5,44,Child,32,,2.7,Female,,No,No,,
+2025,May,"May 31, 2025",2,15,5,44,Child,33,,2.8,Female,,No,No,,
+2025,June,"Jun 30, 2025",2,15,5,44,Child,34,,2.8,Female,,No,No,,
+2025,January,"Jan 31, 2025",2,15,5,45,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,February,"Feb 28, 2025",2,15,5,45,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,March,"Mar 31, 2025",2,15,5,45,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,April,"Apr 30, 2025",2,15,5,45,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,May,"May 31, 2025",2,15,5,45,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,June,"Jun 30, 2025",2,15,5,45,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,January,"Jan 31, 2025",2,15,5,46,Child,,12,12.0,Male,Primary school,No,No,,
+2025,February,"Feb 28, 2025",2,15,5,46,Child,,12,12.0,Male,Primary school,No,No,,
+2025,March,"Mar 31, 2025",2,15,5,46,Child,,12,12.0,Male,Primary school,No,No,,
+2025,April,"Apr 30, 2025",2,15,5,46,Child,,12,12.0,Male,Primary school,No,No,,
+2025,May,"May 31, 2025",2,15,5,46,Child,,12,12.0,Male,Primary school,No,diarrhea,No,
+2025,June,"Jun 30, 2025",2,15,5,46,Child,,12,12.0,Male,Primary school,No,diarrhea,No,
+2025,January,"Jan 31, 2025",2,16,6,47,Household Head,,38,38.0,Female,Secondary schoo,No,No,,Air pollution 
+2025,February,"Feb 28, 2025",2,16,6,47,Household Head,,38,38.0,Female,Secondary schoo,No,No,,Air pollution 
+2025,March,"Mar 31, 2025",2,16,6,47,Household Head,,38,38.0,Female,Secondary schoo,No,No,,Air pollution 
+2025,April,"Apr 30, 2025",2,16,6,47,Household Head,,38,38.0,Female,Secondary schoo,No,No,,Air pollution 
+2025,May,"May 31, 2025",2,16,6,47,Household Head,,38,38.0,Female,Secondary schoo,Hypertension,No,,Air pollution 
+2025,June,"Jun 30, 2025",2,16,6,47,Household Head,,38,38.0,Female,Secondary schoo,Hypertension,No,,Air pollution 
+2025,January,"Jan 31, 2025",2,16,6,48,Child,52,,4.3,Male,not able to read and write,No,Only Fever,Yes,
+2025,February,"Feb 28, 2025",2,16,6,48,Child,53,,4.4,Male,not able to read and write,No,Only Fever,Yes,
+2025,March,"Mar 31, 2025",2,16,6,48,Child,54,,4.5,Male,not able to read and write,No,Only Fever,Yes,
+2025,April,"Apr 30, 2025",2,16,6,48,Child,55,,4.6,Male,not able to read and write,No,Only Fever,Yes,
+2025,May,"May 31, 2025",2,16,6,48,Child,56,,4.7,Male,not able to read and write,No,Only Fever,Yes,
+2025,June,"Jun 30, 2025",2,16,6,48,Child,57,,4.8,Male,not able to read and write,No,Only Fever,Yes,
+2025,January,"Jan 31, 2025",2,16,6,49,Child,,7,7.0,Male,Primary school,No,No,,
+2025,February,"Feb 28, 2025",2,16,6,49,Child,,7,7.0,Male,Primary school,No,No,,
+2025,March,"Mar 31, 2025",2,16,6,49,Child,,7,7.0,Male,Primary school,No,No,,
+2025,April,"Apr 30, 2025",2,16,6,49,Child,,7,7.0,Male,Primary school,No,No,,
+2025,May,"May 31, 2025",2,16,6,49,Child,,7,7.0,Male,Primary school,No,No,,
+2025,June,"Jun 30, 2025",2,16,6,49,Child,,7,7.0,Male,Primary school,No,No,,
+2025,January,"Jan 31, 2025",2,16,6,50,Child,,9,9.0,Female,Primary school,No,No,,
+2025,February,"Feb 28, 2025",2,16,6,50,Child,,9,9.0,Female,Primary school,No,No,,
+2025,March,"Mar 31, 2025",2,16,6,50,Child,,9,9.0,Female,Primary school,No,No,,
+2025,April,"Apr 30, 2025",2,16,6,50,Child,,9,9.0,Female,Primary school,No,No,,
+2025,May,"May 31, 2025",2,16,6,50,Child,,9,9.0,Female,Primary school,No,Other,Yes,
+2025,June,"Jun 30, 2025",2,16,6,50,Child,,9,9.0,Female,Primary school,No,Other,Yes,
+2025,January,"Jan 31, 2025",2,16,6,51,Child,,16,16.0,Female,Secondary schoo,No,No,,
+2025,February,"Feb 28, 2025",2,16,6,51,Child,,16,16.0,Female,Secondary schoo,No,No,,
+2025,March,"Mar 31, 2025",2,16,6,51,Child,,16,16.0,Female,Secondary schoo,No,No,,
+2025,April,"Apr 30, 2025",2,16,6,51,Child,,16,16.0,Female,Secondary schoo,No,No,,
+2025,May,"May 31, 2025",2,16,6,51,Child,,16,16.0,Female,Secondary schoo,No,No,,
+2025,June,"Jun 30, 2025",2,16,6,51,Child,,16,16.0,Female,Secondary schoo,No,No,,
+2025,January,"Jan 31, 2025",2,16,6,52,Relative,,66,66.0,Female,not able to read and write,No,No,,
+2025,February,"Feb 28, 2025",2,16,6,52,Relative,,66,66.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,March,"Mar 31, 2025",2,16,6,52,Relative,,66,66.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,April,"Apr 30, 2025",2,16,6,52,Relative,,66,66.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,May,"May 31, 2025",2,16,6,52,Relative,,66,66.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,June,"Jun 30, 2025",2,16,6,52,Relative,,66,66.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,January,"Jan 31, 2025",2,17,1,53,Household Head,,35,35.0,Male,Above secondary school,Asthma (CORP),No,,Air pollution 
+2025,February,"Feb 28, 2025",2,17,1,53,Household Head,,35,35.0,Male,Above secondary school,Asthma (CORP),No,,Air pollution 
+2025,March,"Mar 31, 2025",2,17,1,53,Household Head,,35,35.0,Male,Above secondary school,Asthma (CORP),diarrhea,Yes,Air pollution 
+2025,April,"Apr 30, 2025",2,17,1,53,Household Head,,35,35.0,Male,Above secondary school,Asthma (CORP),diarrhea,Yes,Air pollution 
+2025,May,"May 31, 2025",2,17,1,53,Household Head,,35,35.0,Male,Above secondary school,Asthma (CORP),diarrhea,Yes,Air pollution 
+2025,June,"Jun 30, 2025",2,17,1,53,Household Head,,35,35.0,Male,Above secondary school,Asthma (CORP),diarrhea,Yes,Air pollution 
+2025,January,"Jan 31, 2025",2,18,1,54,Household Head,,29,29.0,Male,Above secondary school,No,No,No,Air pollution 
+2025,February,"Feb 28, 2025",2,18,1,54,Household Head,,29,29.0,Male,Above secondary school,No,No,No,Air pollution 
+2025,March,"Mar 31, 2025",2,18,1,54,Household Head,,29,29.0,Male,Above secondary school,No,No,,Air pollution 
+2025,April,"Apr 30, 2025",2,18,1,54,Household Head,,29,29.0,Male,Above secondary school,No,No,,Air pollution 
+2025,May,"May 31, 2025",2,18,1,54,Household Head,,29,29.0,Male,Above secondary school,No,No,,Air pollution 
+2025,June,"Jun 30, 2025",2,18,1,54,Household Head,,29,29.0,Male,Above secondary school,No,No,,Air pollution 
+2025,January,"Jan 31, 2025",2,19,2,55,Household Head,,25,25.0,Male,Above secondary school,No,No,,Air pollution 
+2025,February,"Feb 28, 2025",2,19,2,55,Household Head,,25,25.0,Male,Above secondary school,No,No,,Air pollution 
+2025,March,"Mar 31, 2025",2,19,2,55,Household Head,,25,25.0,Male,Above secondary school,No,No,,Air pollution 
+2025,April,"Apr 30, 2025",2,19,2,55,Household Head,,25,25.0,Male,Above secondary school,No,No,,Air pollution 
+2025,May,"May 31, 2025",2,19,2,55,Household Head,,25,25.0,Male,Above secondary school,No,No,,Air pollution 
+2025,June,"Jun 30, 2025",2,19,2,55,Household Head,,25,25.0,Male,Above secondary school,No,No,,Air pollution 
+2025,January,"Jan 31, 2025",2,19,2,56,Wife,,19,19.0,Female,Secondary schoo,No,No,,
+2025,February,"Feb 28, 2025",2,19,2,56,Wife,,19,19.0,Female,Secondary schoo,No,No,,
+2025,March,"Mar 31, 2025",2,19,2,56,Wife,,19,19.0,Female,Secondary schoo,No,No,,
+2025,April,"Apr 30, 2025",2,19,2,56,Wife,,19,19.0,Female,Secondary schoo,No,No,,
+2025,May,"May 31, 2025",2,19,2,56,Wife,,19,19.0,Female,Secondary schoo,No,Fever and Cough ,Yes,
+2025,June,"Jun 30, 2025",2,19,2,56,Wife,,19,19.0,Female,Secondary schoo,No,Fever and Cough ,Yes,
+2025,January,"Jan 31, 2025",2,20,3,57,Household Head,,30,30.0,Male,Above secondary school,No,No,,Respiratory problem
+2025,February,"Feb 28, 2025",2,20,3,57,Household Head,,30,30.0,Male,Above secondary school,No,No,,Respiratory problem
+2025,March,"Mar 31, 2025",2,20,3,57,Household Head,,30,30.0,Male,Above secondary school,No,No,,Respiratory problem
+2025,April,"Apr 30, 2025",2,20,3,57,Household Head,,30,30.0,Male,Above secondary school,No,No,,Respiratory problem
+2025,May,"May 31, 2025",2,20,3,57,Household Head,,30,30.0,Male,Above secondary school,Asthma (CORP),No,,Respiratory problem
+2025,June,"Jun 30, 2025",2,20,3,57,Household Head,,30,30.0,Male,Above secondary school,Asthma (CORP),No,,Respiratory problem
+2025,January,"Jan 31, 2025",2,20,3,58,Wife,,27,27.0,Female,Above secondary school,No,No,,
+2025,February,"Feb 28, 2025",2,20,3,58,Wife,,27,27.0,Female,Above secondary school,No,No,,
+2025,March,"Mar 31, 2025",2,20,3,58,Wife,,27,27.0,Female,Above secondary school,No,No,,
+2025,April,"Apr 30, 2025",2,20,3,58,Wife,,27,27.0,Female,Above secondary school,No,No,,
+2025,May,"May 31, 2025",2,20,3,58,Wife,,27,27.0,Female,Above secondary school,No,No,,
+2025,June,"Jun 30, 2025",2,20,3,58,Wife,,27,27.0,Female,Above secondary school,No,No,,
+2025,January,"Jan 31, 2025",2,20,3,59,Child,43,,3.6,Male,Able to read and write,No,No,,
+2025,February,"Feb 28, 2025",2,20,3,59,Child,44,,3.7,Male,Able to read and write,No,No,,
+2025,March,"Mar 31, 2025",2,20,3,59,Child,45,,3.8,Male,Able to read and write,No,diarrhea,Yes,
+2025,April,"Apr 30, 2025",2,20,3,59,Child,46,,3.8,Male,Able to read and write,No,diarrhea,Yes,
+2025,May,"May 31, 2025",2,20,3,59,Child,47,,3.9,Male,Able to read and write,No,diarrhea,Yes,
+2025,June,"Jun 30, 2025",2,20,3,59,Child,48,,4.0,Male,Able to read and write,No,diarrhea,Yes,
+2025,January,"Jan 31, 2025",2,21,4,60,Household Head,,44,44.0,Male,Above secondary school,No,No,,Respiratory problem
+2025,February,"Feb 28, 2025",2,21,4,60,Household Head,,44,44.0,Male,Above secondary school,No,No,,Respiratory problem
+2025,March,"Mar 31, 2025",2,21,4,60,Household Head,,44,44.0,Male,Above secondary school,No,No,,Respiratory problem
+2025,April,"Apr 30, 2025",2,21,4,60,Household Head,,44,44.0,Male,Above secondary school,No,No,,Respiratory problem
+2025,May,"May 31, 2025",2,21,4,60,Household Head,,44,44.0,Male,Above secondary school,No,No,,Respiratory problem
+2025,June,"Jun 30, 2025",2,21,4,60,Household Head,,44,44.0,Male,Above secondary school,No,No,,Respiratory problem
+2025,January,"Jan 31, 2025",2,21,4,61,Wife,,38,38.0,Female,Above secondary school,No,No,,
+2025,February,"Feb 28, 2025",2,21,4,61,Wife,,38,38.0,Female,Above secondary school,No,No,,
+2025,March,"Mar 31, 2025",2,21,4,61,Wife,,38,38.0,Female,Above secondary school,No,No,,
+2025,April,"Apr 30, 2025",2,21,4,61,Wife,,38,38.0,Female,Above secondary school,No,No,,
+2025,May,"May 31, 2025",2,21,4,61,Wife,,38,38.0,Female,Above secondary school,No,No,,
+2025,June,"Jun 30, 2025",2,21,4,61,Wife,,38,38.0,Female,Above secondary school,No,No,,
+2025,January,"Jan 31, 2025",2,21,4,62,Child,33,,2.8,Female,,No,No,,
+2025,February,"Feb 28, 2025",2,21,4,62,Child,34,,2.8,Female,,No,No,,
+2025,March,"Mar 31, 2025",2,21,4,62,Child,35,,2.9,Female,,No,No,,
+2025,April,"Apr 30, 2025",2,21,4,62,Child,36,,3.0,Female,,No,No,,
+2025,May,"May 31, 2025",2,21,4,62,Child,37,,3.1,Female,,No,No,,
+2025,June,"Jun 30, 2025",2,21,4,62,Child,38,,3.2,Female,,No,No,,
+2025,January,"Jan 31, 2025",2,21,4,63,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,February,"Feb 28, 2025",2,21,4,63,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,March,"Mar 31, 2025",2,21,4,63,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,April,"Apr 30, 2025",2,21,4,63,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,May,"May 31, 2025",2,21,4,63,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,June,"Jun 30, 2025",2,21,4,63,Child,,6,6.0,Male,Able to read and write,No,No,,
+2025,January,"Jan 31, 2025",3,22,1,64,Household Head,,57,57.0,Female,Above secondary school,No,No,,Sound pollution in the residential area
+2025,February,"Feb 28, 2025",3,22,1,64,Household Head,,57,57.0,Female,Above secondary school,No,No,,Sound pollution in the residential area
+2025,March,"Mar 31, 2025",3,22,1,64,Household Head,,57,57.0,Female,Above secondary school,No,No,,Sound pollution in the residential area
+2025,April,"Apr 30, 2025",3,22,1,64,Household Head,,57,57.0,Female,Above secondary school,No,No,,Sound pollution in the residential area
+2025,May,"May 31, 2025",3,22,1,64,Household Head,,57,57.0,Female,Above secondary school,Heart problem,Only Fever,No,Sound pollution in the residential area
+2025,June,"Jun 30, 2025",3,22,1,64,Household Head,,57,57.0,Female,Above secondary school,Heart problem,Only Fever,No,Sound pollution in the residential area
+2025,January,"Jan 31, 2025",3,23,2,65,Household Head,,45,45.0,Female,Above secondary school,No,No,,Food insecurity
+2025,February,"Feb 28, 2025",3,23,2,65,Household Head,,45,45.0,Female,Above secondary school,No,No,,Food insecurity
+2025,March,"Mar 31, 2025",3,23,2,65,Household Head,,45,45.0,Female,Above secondary school,No,No,,Food insecurity
+2025,April,"Apr 30, 2025",3,23,2,65,Household Head,,45,45.0,Female,Above secondary school,No,No,,Food insecurity
+2025,May,"May 31, 2025",3,23,2,65,Household Head,,45,45.0,Female,Above secondary school,Hypertension,No,,Food insecurity
+2025,June,"Jun 30, 2025",3,23,2,65,Household Head,,45,45.0,Female,Above secondary school,Hypertension,No,,Food insecurity
+2025,January,"Jan 31, 2025",3,23,2,66,Child,,10,10.0,Female,Primary school,No,No,,
+2025,February,"Feb 28, 2025",3,23,2,66,Child,,10,10.0,Female,Primary school,No,No,,
+2025,March,"Mar 31, 2025",3,23,2,66,Child,,10,10.0,Female,Primary school,No,No,,
+2025,April,"Apr 30, 2025",3,23,2,66,Child,,10,10.0,Female,Primary school,No,No,,
+2025,May,"May 31, 2025",3,23,2,66,Child,,10,10.0,Female,Primary school,No,Fever and Cough ,Yes,
+2025,June,"Jun 30, 2025",3,23,2,66,Child,,10,10.0,Female,Primary school,No,Fever and Cough ,Yes,
+2025,January,"Jan 31, 2025",3,24,3,67,Household Head,,43,43.0,Female,Above secondary school,Cancer,No,,Food insecurity
+2025,February,"Feb 28, 2025",3,24,3,67,Household Head,,43,43.0,Female,Above secondary school,Cancer,No,,Food insecurity
+2025,March,"Mar 31, 2025",3,24,3,67,Household Head,,43,43.0,Female,Above secondary school,Cancer,No,,Food insecurity
+2025,April,"Apr 30, 2025",3,24,3,67,Household Head,,43,43.0,Female,Above secondary school,Cancer,No,,Food insecurity
+2025,May,"May 31, 2025",3,24,3,67,Household Head,,43,43.0,Female,Above secondary school,Cancer,No,,Food insecurity
+2025,June,"Jun 30, 2025",3,24,3,67,Household Head,,43,43.0,Female,Above secondary school,Cancer,No,,Food insecurity
+2025,January,"Jan 31, 2025",3,24,3,68,Child,,10,10.0,Female,Primary school,No,No,,
+2025,February,"Feb 28, 2025",3,24,3,68,Child,,10,10.0,Female,Primary school,No,No,,
+2025,March,"Mar 31, 2025",3,24,3,68,Child,,10,10.0,Female,Primary school,No,No,,
+2025,April,"Apr 30, 2025",3,24,3,68,Child,,10,10.0,Female,Primary school,No,No,,
+2025,May,"May 31, 2025",3,24,3,68,Child,,10,10.0,Female,Primary school,No,No,,
+2025,June,"Jun 30, 2025",3,24,3,68,Child,,10,10.0,Female,Primary school,No,No,,
+2025,January,"Jan 31, 2025",3,24,3,69,Child,,13,13.0,Male,Primary school,No,No,,
+2025,February,"Feb 28, 2025",3,24,3,69,Child,,13,13.0,Male,Primary school,No,No,,
+2025,March,"Mar 31, 2025",3,24,3,69,Child,,13,13.0,Male,Primary school,No,No,,
+2025,April,"Apr 30, 2025",3,24,3,69,Child,,13,13.0,Male,Primary school,No,No,,
+2025,May,"May 31, 2025",3,24,3,69,Child,,13,13.0,Male,Primary school,No,No,,
+2025,June,"Jun 30, 2025",3,24,3,69,Child,,13,13.0,Male,Primary school,No,No,,
+2025,January,"Jan 31, 2025",3,25,4,70,Household Head,,57,57.0,Male,Above secondary school,Diabetes Mellitus,No,,Food insecurity
+2025,February,"Feb 28, 2025",3,25,4,70,Household Head,,57,57.0,Male,Above secondary school,Diabetes Mellitus,No,,Food insecurity
+2025,March,"Mar 31, 2025",3,25,4,70,Household Head,,57,57.0,Male,Above secondary school,Diabetes Mellitus,No,,Food insecurity
+2025,April,"Apr 30, 2025",3,25,4,70,Household Head,,57,57.0,Male,Above secondary school,Diabetes Mellitus,No,,Food insecurity
+2025,May,"May 31, 2025",3,25,4,70,Household Head,,57,57.0,Male,Above secondary school,Diabetes Mellitus,No,,Food insecurity
+2025,June,"Jun 30, 2025",3,25,4,70,Household Head,,57,57.0,Male,Above secondary school,Diabetes Mellitus,No,,Food insecurity
+2025,January,"Jan 31, 2025",3,25,4,71,Wife,,50,50.0,Female,Secondary schoo,No,No,,
+2025,February,"Feb 28, 2025",3,25,4,71,Wife,,50,50.0,Female,Secondary schoo,No,No,,
+2025,March,"Mar 31, 2025",3,25,4,71,Wife,,50,50.0,Female,Secondary schoo,Heart problem,No,,
+2025,April,"Apr 30, 2025",3,25,4,71,Wife,,50,50.0,Female,Secondary schoo,Heart problem,No,,
+2025,May,"May 31, 2025",3,25,4,71,Wife,,50,50.0,Female,Secondary schoo,Heart problem,Fever and Rash,Yes,
+2025,June,"Jun 30, 2025",3,25,4,71,Wife,,50,50.0,Female,Secondary schoo,Heart problem,Fever and Rash,Yes,
+2025,January,"Jan 31, 2025",3,25,4,72,Child,,17,17.0,Male,Secondary schoo,No,No,,
+2025,February,"Feb 28, 2025",3,25,4,72,Child,,17,17.0,Male,Secondary schoo,No,No,,
+2025,March,"Mar 31, 2025",3,25,4,72,Child,,17,17.0,Male,Secondary schoo,No,No,,
+2025,April,"Apr 30, 2025",3,25,4,72,Child,,17,17.0,Male,Secondary schoo,No,No,,
+2025,May,"May 31, 2025",3,25,4,72,Child,,17,17.0,Male,Secondary schoo,No,Only Cough,No,
+2025,June,"Jun 30, 2025",3,25,4,72,Child,,17,17.0,Male,Secondary schoo,No,Only Cough,No,
+2025,January,"Jan 31, 2025",3,25,4,73,Child,,14,14.0,Female,Primary school,No,No,,
+2025,February,"Feb 28, 2025",3,25,4,73,Child,,14,14.0,Female,Primary school,No,No,,
+2025,March,"Mar 31, 2025",3,25,4,73,Child,,14,14.0,Female,Primary school,No,No,,
+2025,April,"Apr 30, 2025",3,25,4,73,Child,,14,14.0,Female,Primary school,No,No,,
+2025,May,"May 31, 2025",3,25,4,73,Child,,14,14.0,Female,Primary school,No,No,,
+2025,June,"Jun 30, 2025",3,25,4,73,Child,,14,14.0,Female,Primary school,No,No,,
+2025,January,"Jan 31, 2025",3,26,5,74,Household Head,,40,40.0,Male,Above secondary school,Asthma (CORP),No,,Food insecurity
+2025,February,"Feb 28, 2025",3,26,5,74,Household Head,,40,40.0,Male,Above secondary school,Asthma (CORP),No,,Food insecurity
+2025,March,"Mar 31, 2025",3,26,5,74,Household Head,,40,40.0,Male,Above secondary school,Asthma (CORP),No,,Food insecurity
+2025,April,"Apr 30, 2025",3,26,5,74,Household Head,,40,40.0,Male,Above secondary school,Asthma (CORP),No,,Food insecurity
+2025,May,"May 31, 2025",3,26,5,74,Household Head,,40,40.0,Male,Above secondary school,Asthma (CORP),No,,Food insecurity
+2025,June,"Jun 30, 2025",3,26,5,74,Household Head,,40,40.0,Male,Above secondary school,Asthma (CORP),No,,Food insecurity
+2025,January,"Jan 31, 2025",3,26,5,75,Wife,,35,35.0,Female,Secondary schoo,No,No,,
+2025,February,"Feb 28, 2025",3,26,5,75,Wife,,35,35.0,Female,Secondary schoo,No,No,,
+2025,March,"Mar 31, 2025",3,26,5,75,Wife,,35,35.0,Female,Secondary schoo,No,No,,
+2025,April,"Apr 30, 2025",3,26,5,75,Wife,,35,35.0,Female,Secondary schoo,No,No,,
+2025,May,"May 31, 2025",3,26,5,75,Wife,,35,35.0,Female,Secondary schoo,Other,No,,
+2025,June,"Jun 30, 2025",3,26,5,75,Wife,,35,35.0,Female,Secondary schoo,Other,No,,
+2025,January,"Jan 31, 2025",3,26,5,76,Child,19,,1.6,Male,,No,No,,
+2025,February,"Feb 28, 2025",3,26,5,76,Child,20,,1.7,Male,,No,No,,
+2025,March,"Mar 31, 2025",3,26,5,76,Child,21,,1.8,Male,,No,No,,
+2025,April,"Apr 30, 2025",3,26,5,76,Child,22,,1.8,Male,,No,No,,
+2025,May,"May 31, 2025",3,26,5,76,Child,23,,1.9,Male,,No,No,,
+2025,June,"Jun 30, 2025",3,26,5,76,Child,24,,2.0,Male,,No,No,,
+2025,January,"Jan 31, 2025",3,26,5,77,Child,,5,5.0,Male,Able to read and write,No,No,,
+2025,February,"Feb 28, 2025",3,26,5,77,Child,,5,5.0,Male,Able to read and write,No,No,,
+2025,March,"Mar 31, 2025",3,26,5,77,Child,,5,5.0,Male,Able to read and write,No,No,,
+2025,April,"Apr 30, 2025",3,26,5,77,Child,,5,5.0,Male,Able to read and write,No,No,,
+2025,May,"May 31, 2025",3,26,5,77,Child,,5,5.0,Male,Able to read and write,No,No,,
+2025,June,"Jun 30, 2025",3,26,5,77,Child,,5,5.0,Male,Able to read and write,No,No,,
+2025,January,"Jan 31, 2025",3,26,5,78,Child,,8,8.0,Male,Primary school,No,Only Cough,Yes,
+2025,February,"Feb 28, 2025",3,26,5,78,Child,,8,8.0,Male,Primary school,No,Only Cough,Yes,
+2025,March,"Mar 31, 2025",3,26,5,78,Child,,8,8.0,Male,Primary school,No,Only Cough,Yes,
+2025,April,"Apr 30, 2025",3,26,5,78,Child,,8,8.0,Male,Primary school,No,Only Cough,Yes,
+2025,May,"May 31, 2025",3,26,5,78,Child,,8,8.0,Male,Primary school,No,Only Cough,Yes,
+2025,June,"Jun 30, 2025",3,26,5,78,Child,,8,8.0,Male,Primary school,No,Only Cough,Yes,
+2025,January,"Jan 31, 2025",3,27,6,79,Household Head,,42,42.0,Male,Above secondary school,Hypertension,No,,Food insecurity
+2025,February,"Feb 28, 2025",3,27,6,79,Household Head,,42,42.0,Male,Above secondary school,Hypertension,No,,Food insecurity
+2025,March,"Mar 31, 2025",3,27,6,79,Household Head,,42,42.0,Male,Above secondary school,No,No,,Food insecurity
+2025,April,"Apr 30, 2025",3,27,6,79,Household Head,,42,42.0,Male,Above secondary school,No,No,,Food insecurity
+2025,May,"May 31, 2025",3,27,6,79,Household Head,,42,42.0,Male,Above secondary school,Hypertension,No,,Food insecurity
+2025,June,"Jun 30, 2025",3,27,6,79,Household Head,,42,42.0,Male,Above secondary school,Hypertension,No,,Food insecurity
+2025,January,"Jan 31, 2025",3,27,6,80,Wife,,38,38.0,Female,Secondary schoo,Heart problem,No,,
+2025,February,"Feb 28, 2025",3,27,6,80,Wife,,38,38.0,Female,Secondary schoo,Heart problem,No,,
+2025,March,"Mar 31, 2025",3,27,6,80,Wife,,38,38.0,Female,Secondary schoo,Heart problem,No,,
+2025,April,"Apr 30, 2025",3,27,6,80,Wife,,38,38.0,Female,Secondary schoo,Heart problem,No,,
+2025,May,"May 31, 2025",3,27,6,80,Wife,,38,38.0,Female,Secondary schoo,Heart problem,No,,
+2025,June,"Jun 30, 2025",3,27,6,80,Wife,,38,38.0,Female,Secondary schoo,Heart problem,No,,
+2025,January,"Jan 31, 2025",3,27,6,81,Child,46,,3.8,Female,not able to read and write,No,No,,
+2025,February,"Feb 28, 2025",3,27,6,81,Child,47,,3.9,Female,not able to read and write,No,No,,
+2025,March,"Mar 31, 2025",3,27,6,81,Child,48,,4.0,Female,not able to read and write,No,No,,
+2025,April,"Apr 30, 2025",3,27,6,81,Child,49,,4.1,Female,not able to read and write,No,No,,
+2025,May,"May 31, 2025",3,27,6,81,Child,50,,4.2,Female,not able to read and write,No,diarrhea,Yes,
+2025,June,"Jun 30, 2025",3,27,6,81,Child,51,,4.3,Female,not able to read and write,No,diarrhea,Yes,
+2025,January,"Jan 31, 2025",3,27,6,82,Child,,6,6.0,Female,Able to read and write,No,No,,
+2025,February,"Feb 28, 2025",3,27,6,82,Child,,6,6.0,Female,Able to read and write,No,No,,
+2025,March,"Mar 31, 2025",3,27,6,82,Child,,6,6.0,Female,Able to read and write,No,No,,
+2025,April,"Apr 30, 2025",3,27,6,82,Child,,6,6.0,Female,Able to read and write,No,No,,
+2025,May,"May 31, 2025",3,27,6,82,Child,,6,6.0,Female,Able to read and write,No,No,,
+2025,June,"Jun 30, 2025",3,27,6,82,Child,,6,6.0,Female,Able to read and write,No,No,,
+2025,January,"Jan 31, 2025",3,27,6,83,Child,,10,10.0,Male,Primary school,No,No,,
+2025,February,"Feb 28, 2025",3,27,6,83,Child,,10,10.0,Male,Primary school,No,No,,
+2025,March,"Mar 31, 2025",3,27,6,83,Child,,10,10.0,Male,Primary school,No,No,,
+2025,April,"Apr 30, 2025",3,27,6,83,Child,,10,10.0,Male,Primary school,No,No,,
+2025,May,"May 31, 2025",3,27,6,83,Child,,10,10.0,Male,Primary school,No,No,,
+2025,June,"Jun 30, 2025",3,27,6,83,Child,,10,10.0,Male,Primary school,No,No,,
+2025,January,"Jan 31, 2025",3,27,6,84,Relative,,62,62.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,February,"Feb 28, 2025",3,27,6,84,Relative,,62,62.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,March,"Mar 31, 2025",3,27,6,84,Relative,,62,62.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,April,"Apr 30, 2025",3,27,6,84,Relative,,62,62.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,May,"May 31, 2025",3,27,6,84,Relative,,62,62.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,June,"Jun 30, 2025",3,27,6,84,Relative,,62,62.0,Female,not able to read and write,Diabetes Mellitus,No,,
+2025,January,"Jan 31, 2025",3,28,1,85,Household Head,,32,32.0,Male,Above secondary school,No,No,,Drinking water problem
+2025,February,"Feb 28, 2025",3,28,1,85,Household Head,,32,32.0,Male,Above secondary school,No,No,,Drinking water problem
+2025,March,"Mar 31, 2025",3,28,1,85,Household Head,,32,32.0,Male,Above secondary school,No,No,,Drinking water problem
+2025,April,"Apr 30, 2025",3,28,1,85,Household Head,,32,32.0,Male,Above secondary school,No,No,,Drinking water problem
+2025,May,"May 31, 2025",3,28,1,85,Household Head,,32,32.0,Male,Above secondary school,No,No,,Drinking water problem
+2025,June,"Jun 30, 2025",3,28,1,85,Household Head,,32,32.0,Male,Above secondary school,No,No,,Drinking water problem
+2025,January,"Jan 31, 2025",3,29,1,86,Household Head,,28,28.0,Female,Above secondary school,No,No,,Air pollution 
+2025,February,"Feb 28, 2025",3,29,1,86,Household Head,,28,28.0,Female,Above secondary school,No,No,,Air pollution 
+2025,March,"Mar 31, 2025",3,29,1,86,Household Head,,28,28.0,Female,Above secondary school,No,No,,Air pollution 
+2025,April,"Apr 30, 2025",3,29,1,86,Household Head,,28,28.0,Female,Above secondary school,No,No,,Air pollution 
+2025,May,"May 31, 2025",3,29,1,86,Household Head,,28,28.0,Female,Above secondary school,No,Other,No,Air pollution 
+2025,June,"Jun 30, 2025",3,29,1,86,Household Head,,28,28.0,Female,Above secondary school,No,Other,No,Air pollution 
+2025,January,"Jan 31, 2025",3,30,2,87,Household Head,,41,41.0,Female,Above secondary school,Hypertension,No,,Drinking water problem
+2025,February,"Feb 28, 2025",3,30,2,87,Household Head,,41,41.0,Female,Above secondary school,Hypertension,No,,Drinking water problem
+2025,March,"Mar 31, 2025",3,30,2,87,Household Head,,41,41.0,Female,Above secondary school,Hypertension,No,,Drinking water problem
+2025,April,"Apr 30, 2025",3,30,2,87,Household Head,,41,41.0,Female,Above secondary school,Hypertension,No,,Drinking water problem
+2025,May,"May 31, 2025",3,30,2,87,Household Head,,41,41.0,Female,Above secondary school,Hypertension,No,,Drinking water problem
+2025,June,"Jun 30, 2025",3,30,2,87,Household Head,,41,41.0,Female,Above secondary school,Hypertension,No,,Drinking water problem
+2025,January,"Jan 31, 2025",3,33,2,88,Child,,16,16.0,Male,Secondary schoo,No,No,,
+2025,February,"Feb 28, 2025",3,33,2,88,Child,,16,16.0,Male,Secondary schoo,No,No,,
+2025,March,"Mar 31, 2025",3,33,2,88,Child,,16,16.0,Male,Secondary schoo,No,No,,
+2025,April,"Apr 30, 2025",3,33,2,88,Child,,16,16.0,Male,Secondary schoo,No,No,,
+2025,May,"May 31, 2025",3,33,2,88,Child,,16,16.0,Male,Secondary schoo,No,No,,
+2025,June,"Jun 30, 2025",3,33,2,88,Child,,16,16.0,Male,Secondary schoo,No,No,,
+2025,January,"Jan 31, 2025",3,31,3,89,Household Head,,35,35.0,Male,Above secondary school,Heart problem,No,,Drinking water problem
+2025,February,"Feb 28, 2025",3,31,3,89,Household Head,,35,35.0,Male,Above secondary school,Heart problem,No,,Drinking water problem
+2025,March,"Mar 31, 2025",3,31,3,89,Household Head,,35,35.0,Male,Above secondary school,Heart problem,No,,Drinking water problem
+2025,April,"Apr 30, 2025",3,31,3,89,Household Head,,35,35.0,Male,Above secondary school,Heart problem,No,,Drinking water problem
+2025,May,"May 31, 2025",3,31,3,89,Household Head,,35,35.0,Male,Above secondary school,Heart problem,No,,Drinking water problem
+2025,June,"Jun 30, 2025",3,31,3,89,Household Head,,35,35.0,Male,Above secondary school,Heart problem,No,,Drinking water problem
+2025,January,"Jan 31, 2025",3,31,3,90,Wife,,30,30.0,Female,Above secondary school,Asthma (CORP),Only Cough,Yes,
+2025,February,"Feb 28, 2025",3,31,3,90,Wife,,30,30.0,Female,Above secondary school,Asthma (CORP),Only Cough,Yes,
+2025,March,"Mar 31, 2025",3,31,3,90,Wife,,30,30.0,Female,Above secondary school,Asthma (CORP),Only Cough,Yes,
+2025,April,"Apr 30, 2025",3,31,3,90,Wife,,30,30.0,Female,Above secondary school,Asthma (CORP),Only Cough,Yes,
+2025,May,"May 31, 2025",3,31,3,90,Wife,,30,30.0,Female,Above secondary school,Asthma (CORP),Only Cough,Yes,
+2025,June,"Jun 30, 2025",3,31,3,90,Wife,,30,30.0,Female,Above secondary school,Asthma (CORP),Only Cough,Yes,
+2025,January,"Jan 31, 2025",3,31,3,91,Child,,9,9.0,Male,Primary school,No,No,,
+2025,February,"Feb 28, 2025",3,31,3,91,Child,,9,9.0,Male,Primary school,No,No,,
+2025,March,"Mar 31, 2025",3,31,3,91,Child,,9,9.0,Male,Primary school,No,No,,
+2025,April,"Apr 30, 2025",3,31,3,91,Child,,9,9.0,Male,Primary school,No,No,,
+2025,May,"May 31, 2025",3,31,3,91,Child,,9,9.0,Male,Primary school,No,Fever and Cough ,Yes,
+2025,June,"Jun 30, 2025",3,31,3,91,Child,,9,9.0,Male,Primary school,No,Fever and Cough ,Yes,
+2025,January,"Jan 31, 2025",3,32,4,92,Household Head,,33,33.0,Male,Above secondary school,No,No,,Other
+2025,February,"Feb 28, 2025",3,32,4,92,Household Head,,33,33.0,Male,Above secondary school,No,No,,Other
+2025,March,"Mar 31, 2025",3,32,4,92,Household Head,,33,33.0,Male,Above secondary school,No,No,,Food insecurity
+2025,April,"Apr 30, 2025",3,32,4,92,Household Head,,33,33.0,Male,Above secondary school,No,No,,Food insecurity
+2025,May,"May 31, 2025",3,32,4,92,Household Head,,33,33.0,Male,Above secondary school,No,No,,Food insecurity
+2025,June,"Jun 30, 2025",3,32,4,92,Household Head,,33,33.0,Male,Above secondary school,No,No,,Food insecurity
+2025,January,"Jan 31, 2025",3,32,4,93,Wife,,21,21.0,Female,Secondary schoo,No,No,,
+2025,February,"Feb 28, 2025",3,32,4,93,Wife,,21,21.0,Female,Secondary schoo,No,No,,
+2025,March,"Mar 31, 2025",3,32,4,93,Wife,,21,21.0,Female,Secondary schoo,No,No,,
+2025,April,"Apr 30, 2025",3,32,4,93,Wife,,21,21.0,Female,Secondary schoo,No,No,,
+2025,May,"May 31, 2025",3,32,4,93,Wife,,21,21.0,Female,Secondary schoo,No,No,,
+2025,June,"Jun 30, 2025",3,32,4,93,Wife,,21,21.0,Female,Secondary schoo,No,No,,
+2025,January,"Jan 31, 2025",3,32,4,94,Child,1,,0.1,Male,,No,No,,
+2025,February,"Feb 28, 2025",3,32,4,94,Child,2,,0.2,Male,,No,No,,
+2025,March,"Mar 31, 2025",3,32,4,94,Child,3,,0.3,Male,,No,Other,Yes,
+2025,April,"Apr 30, 2025",3,32,4,94,Child,4,,0.3,Male,,No,Other,Yes,
+2025,May,"May 31, 2025",3,32,4,94,Child,5,,0.4,Male,,No,Other,Yes,
+2025,June,"Jun 30, 2025",3,32,4,94,Child,6,,0.5,Male,,No,Other,Yes,
+2025,January,"Jan 31, 2025",3,32,4,95,Relative,,54,54.0,Female,not able to read and write,Cancer,No,,
+2025,February,"Feb 28, 2025",3,32,4,95,Relative,,54,54.0,Female,not able to read and write,Cancer,No,,
+2025,March,"Mar 31, 2025",3,32,4,95,Relative,,54,54.0,Female,not able to read and write,Cancer,No,,
+2025,April,"Apr 30, 2025",3,32,4,95,Relative,,54,54.0,Female,not able to read and write,Cancer,No,,
+2025,May,"May 31, 2025",3,32,4,95,Relative,,54,54.0,Female,not able to read and write,Cancer,No,,
+2025,June,"Jun 30, 2025",3,32,4,95,Relative,,54,54.0,Female,not able to read and write,Cancer,No,,
+2025,January,"Jan 31, 2025",3,33,1,96,Household Head,,74,74.0,Female,Above secondary school,Hypertension,No,,Other
+2025,February,"Feb 28, 2025",3,33,1,96,Household Head,,74,74.0,Female,Above secondary school,Hypertension,No,,Other
+2025,March,"Mar 31, 2025",3,33,1,96,Household Head,,74,74.0,Female,Above secondary school,Hypertension,No,,Other
+2025,April,"Apr 30, 2025",3,33,1,96,Household Head,,74,74.0,Female,Above secondary school,Hypertension,No,,Other
+2025,May,"May 31, 2025",3,33,1,96,Household Head,,74,74.0,Female,Above secondary school,Hypertension,No,,Food insecurity
+2025,June,"Jun 30, 2025",3,33,1,96,Household Head,,74,74.0,Female,Above secondary school,Hypertension,No,,Food insecurity
+2025,January,"Jan 31, 2025",3,34,3,97,Household Head,,43,43.0,Male,Above secondary school,Heart problem,Only Cough,No,Drinking water problem
+2025,February,"Feb 28, 2025",3,34,3,97,Household Head,,43,43.0,Male,Above secondary school,Heart problem,Only Cough,No,Drinking water problem
+2025,March,"Mar 31, 2025",3,34,3,97,Household Head,,43,43.0,Male,Above secondary school,Heart problem,Only Cough,No,Drinking water problem
+2025,April,"Apr 30, 2025",3,34,3,97,Household Head,,43,43.0,Male,Above secondary school,Heart problem,Only Cough,No,Drinking water problem
+2025,May,"May 31, 2025",3,34,3,97,Household Head,,43,43.0,Male,Above secondary school,Heart problem,Only Cough,No,Drinking water problem
+2025,June,"Jun 30, 2025",3,34,3,97,Household Head,,43,43.0,Male,Above secondary school,Heart problem,Only Cough,No,Drinking water problem
+2025,January,"Jan 31, 2025",3,34,3,98,Wife,,37,37.0,Female,Above secondary school,Other,No,,
+2025,February,"Feb 28, 2025",3,34,3,98,Wife,,37,37.0,Female,Above secondary school,Other,No,,
+2025,March,"Mar 31, 2025",3,34,3,98,Wife,,37,37.0,Female,Above secondary school,Other,No,,
+2025,April,"Apr 30, 2025",3,34,3,98,Wife,,37,37.0,Female,Above secondary school,Other,No,,
+2025,May,"May 31, 2025",3,34,3,98,Wife,,37,37.0,Female,Above secondary school,Other,No,,
+2025,June,"Jun 30, 2025",3,34,3,98,Wife,,37,37.0,Female,Above secondary school,Other,No,,
+2025,January,"Jan 31, 2025",3,34,3,99,Child,,7,7.0,Female,Primary school,No,No,,
+2025,February,"Feb 28, 2025",3,34,3,99,Child,,7,7.0,Female,Primary school,No,No,,
+2025,March,"Mar 31, 2025",3,34,3,99,Child,,7,7.0,Female,Primary school,No,diarrhea,Yes,
+2025,April,"Apr 30, 2025",3,34,3,99,Child,,7,7.0,Female,Primary school,No,diarrhea,Yes,
+2025,May,"May 31, 2025",3,34,3,99,Child,,7,7.0,Female,Primary school,No,diarrhea,Yes,
+2025,June,"Jun 30, 2025",3,34,3,99,Child,,7,7.0,Female,Primary school,No,diarrhea,Yes,
+2025,January,"Jan 31, 2025",3,35,4,100,Household Head,,30,30.0,Male,Above secondary school,No,No,,Sound pollution in the residential area
+2025,February,"Feb 28, 2025",3,35,4,100,Household Head,,30,30.0,Male,Above secondary school,No,No,,Sound pollution in the residential area
+2025,March,"Mar 31, 2025",3,35,4,100,Household Head,,30,30.0,Male,Above secondary school,No,No,,Sound pollution in the residential area
+2025,April,"Apr 30, 2025",3,35,4,100,Household Head,,30,30.0,Male,Above secondary school,No,No,,Sound pollution in the residential area
+2025,May,"May 31, 2025",3,35,4,100,Household Head,,30,30.0,Male,Above secondary school,No,No,,Sound pollution in the residential area
+2025,June,"Jun 30, 2025",3,35,4,100,Household Head,,30,30.0,Male,Above secondary school,No,No,,Sound pollution in the residential area
+2025,January,"Jan 31, 2025",3,35,4,101,Wife,,21,21.0,Female,Secondary schoo,No,diarrhea,No,
+2025,February,"Feb 28, 2025",3,35,4,101,Wife,,21,21.0,Female,Secondary schoo,No,diarrhea,No,
+2025,March,"Mar 31, 2025",3,35,4,101,Wife,,21,21.0,Female,Secondary schoo,No,diarrhea,No,
+2025,April,"Apr 30, 2025",3,35,4,101,Wife,,21,21.0,Female,Secondary schoo,No,diarrhea,No,
+2025,May,"May 31, 2025",3,35,4,101,Wife,,21,21.0,Female,Secondary schoo,No,diarrhea,No,
+2025,June,"Jun 30, 2025",3,35,4,101,Wife,,21,21.0,Female,Secondary schoo,No,diarrhea,No,
+2025,January,"Jan 31, 2025",3,35,4,102,Child,16,,1.3,Male,,No,No,,
+2025,February,"Feb 28, 2025",3,35,4,102,Child,17,,1.4,Male,,No,No,,
+2025,March,"Mar 31, 2025",3,35,4,102,Child,18,,1.5,Male,,No,No,,
+2025,April,"Apr 30, 2025",3,35,4,102,Child,19,,1.6,Male,,No,No,,
+2025,May,"May 31, 2025",3,35,4,102,Child,20,,1.7,Male,,No,No,,
+2025,June,"Jun 30, 2025",3,35,4,102,Child,21,,1.8,Male,,No,No,,
+2025,January,"Jan 31, 2025",3,35,4,103,Child,22,,1.8,Male,,No,No,,
+2025,February,"Feb 28, 2025",3,35,4,103,Child,23,,1.9,Male,,No,No,,
+2025,March,"Mar 31, 2025",3,35,4,103,Child,24,,2.0,Male,,No,No,,
+2025,April,"Apr 30, 2025",3,35,4,103,Child,25,,2.1,Male,,No,No,,
+2025,May,"May 31, 2025",3,35,4,103,Child,26,,2.2,Male,,No,No,,
+2025,June,"Jun 30, 2025",3,35,4,103,Housemaid,,13,13.0,Female,Primary school,No,Only Fever,Yes,
+2025,January,"Jan 31, 2025",3,36,2,104,Household Head,,32,32.0,Female,Above secondary school,No,No,,Other
+2025,February,"Feb 28, 2025",3,36,2,104,Household Head,,32,32.0,Female,Above secondary school,No,No,,Other
+2025,March,"Mar 31, 2025",3,36,2,104,Household Head,,32,32.0,Female,Above secondary school,No,No,,Other
+2025,April,"Apr 30, 2025",3,36,2,104,Household Head,,32,32.0,Female,Above secondary school,No,No,,Other
+2025,May,"May 31, 2025",3,36,2,104,Household Head,,32,32.0,Female,Above secondary school,Asthma (CORP),No,,Other
+2025,June,"Jun 30, 2025",3,36,2,104,Household Head,,32,32.0,Female,Above secondary school,Asthma (CORP),No,,Other
+2025,January,"Jan 31, 2025",3,36,2,105,Child,41,,3.4,Female,not able to read and write,No,No,,
+2025,February,"Feb 28, 2025",3,36,2,105,Child,42,,3.5,Female,not able to read and write,No,No,,
+2025,March,"Mar 31, 2025",3,36,2,105,Child,43,,3.6,Female,not able to read and write,No,No,,
+2025,April,"Apr 30, 2025",3,36,2,105,Child,44,,3.7,Female,not able to read and write,No,No,,
+2025,May,"May 31, 2025",3,36,2,105,Child,45,,3.8,Female,not able to read and write,No,No,,
+2025,June,"Jun 30, 2025",3,36,2,105,Child,46,,3.8,Female,not able to read and write,No,No,,
+2025,January,"Jan 31, 2025",1,1,2,2,Child,5,,0.4,Male,,No,No,,
+2025,February,"Feb 28, 2025",1,1,2,2,Child,6,,0.5,Male,,No,No,,
