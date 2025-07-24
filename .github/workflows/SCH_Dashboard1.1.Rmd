@@ -1,0 +1,396 @@
+---
+title: "Simple Community Health Dashboard (SCH_Dashboard)"
+author: "Chernet Hailu Mengesha"
+date: "`r Sys.Date()`"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source_code: embed
+    theme: yeti
+dateRDLM: "June 30, 2025"
+dateRP: "January - June, 2025"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+source(".../SCH_Dashboard1.1/SCH_Dashboard1.1.R")
+
+pacman::p_load(knitr, here, flexdashboard, tidyverse,
+               DT, scales, plotly, patchwork,  readr, stringr,
+               forcats, memisc, pyramid, janitor, paletteer,
+               ggsci, pwalk, rpivotTable, highcharter, htmltools,
+               viridis, outbreaks, ggrepel, ggthemes, zoo, options(scipen=999),table1)
+
+
+
+# Load the dataset
+Hypottowndata20  #longitudinal data - monthly assessment for the same households (hypothetical data)
+Hypottowndata21  # Preparation for analysis: age groups have been created for the data
+Hypottowndata21T #subset of the dataset: The recent (the last assessment month) data for town X,country X
+
+#Defined-specific version of date()
+date1<- format(Sys.time(), "%b %d,%Y")
+dateRDLM <- paste("June 30,2025")
+dateRP <- paste("January - June, 2025")
+
+# Defined district names
+District<-c("1", "2", "3")
+```
+
+Sidebar {.sidebar}
+==============================
+
+### An Example of Simple Community Health (SCH) Dashboard (For Exercise)
+
+The SCH_Dashboard is a households based community health data dashboard.
+
+Please try to review this dashboard and let's work as a team for its improvement. You can get my address by clicking on the "Contact Me" menu.
+
+   *The best comes as a result of collaborative endeavor!*
+   
+# Town X Dashboard (The Recent Month)
+
+## Column {.tableset data-width=500}
+
+### Chart- Population Pyramid
+
+```{r}
+pyramidT(Hypottowndata21T)
+```
+
+## Column {data-width=500}
+
+### Chart-Known Sickness {.no-padding}
+
+```{r}
+chartknsT(Hypottowndata21T)
+```
+
+### Chart- Current Sickness (symptoms){.no-padding}
+
+```{r}
+chartcurskT(Hypottowndata21T)
+```
+
+## Row
+### Chart - Sought Health Facility
+
+```{r}
+chartsouhfT(Hypottowndata21T)
+```
+
+### Chart - Main Percieved community health problem (Main_PCHP)
+
+```{r}
+chartchpT(Hypottowndata21T)
+```
+
+# Town X Dashboard (Trend)
+
+## Column {.tableset data-width=500}
+
+### Summary Table
+
+```{r}
+stabT(Hypottowndata21)
+```
+
+## Column {data-width=500}
+
+### Line Graph - Known Sickness {.no-padding}
+
+```{r}
+lplotknsT(Hypottowndata21)
+```
+
+### Line Graph- Current Sickness (symptoms){.no-padding}
+
+```{r}
+lplotcurskT(Hypottowndata21)
+```
+
+## Row
+### Line Graph - Sought Health Facility
+
+```{r}
+lplotsouhfT(Hypottowndata21)
+```
+
+### Line Graph - Main Percieved community health problem (Main_PCHP)
+
+```{r}
+lplotpchpT(Hypottowndata21)
+```
+
+# District 1 Dashboard (The Recent Month)
+
+## Column {.tableset data-width=500}
+
+### Chart -1.1 Sex
+
+```{r}
+piesexd1(Hypottowndata21T)
+```
+
+## Column {data-width=500}
+
+### Chart-1.2 Known Sickness {.no-padding}
+
+```{r}
+barchKnSd1(Hypottowndata21T)
+```
+
+### Chart-1.3 Current Sickness (symptoms){.no-padding}
+
+```{r}
+barcurSd1(Hypottowndata21T)
+```
+
+## Row
+
+### Chart -1.4 Sought Health Facility
+
+```{r}
+barsouhfd1(Hypottowndata21T)
+```
+
+### Chart - 1.5 Main Percieved community health problem (Main_PCHP)
+```{r}
+barMPCHPd1(Hypottowndata21T)
+```
+
+# District 1 Dashboard (Trend)
+
+## Column {.tableset data-width=500}
+
+### Summary Table-1.1
+
+```{r}
+stabD1(Hypottowndata21) 
+```
+
+## Column {data-width=500}
+
+### Line Graph-1.1 Known Sickness {.no-padding}
+
+```{r}
+lplotKnSD1(Hypottowndata21)
+```
+
+### Line Graph-1.2 Current Sickness (symptoms){.no-padding}
+
+```{r}
+lplotcurSD1(Hypottowndata21)
+```
+
+## Row
+
+### Line Graph-1.3 Sought Health Facility
+
+```{r}
+lplotsouhfD1(Hypottowndata21)
+```
+
+### Line Graph- 1.4 Main Percieved community health problem (Main_PCHP)
+
+```{r}
+lplotMPCHPD1(Hypottowndata21)
+```
+
+# District 2 Dashboard (The Recent Month)
+
+## Column {.tabset data-width=500}
+
+### Chart - 2.1 Sex
+
+```{r}
+piesexd2(Hypottowndata21T)
+```
+
+## Column {data-width=500}
+
+### Chart-2.2 Known Sickness {.no-padding} 
+
+```{r}
+barchKnSd2(Hypottowndata21T)
+```
+
+### Chart-2.3 Current Sickness (symptoms) {.no-padding}
+
+```{r}
+barcurSd2(Hypottowndata21T)
+```
+
+## Row
+
+### Chart -2.4 Sought Health Facility
+```{r}
+barsouhfd2(Hypottowndata21T)
+```
+
+### Chart - 2.5 Main Percieved community health problem (Main_PCHP)
+
+```{r}
+barMPCHPd2(Hypottowndata21T)
+```
+
+# District 2 Dashboard (Trend)
+
+## Column {.tabset data-width=500}
+
+### Summary Table-2.1
+
+```{r}
+stabD2(Hypottowndata21)
+```
+
+## Column {data-width=500}
+
+### Line Graph-2.1 Known Sickness {.no-padding} 
+
+```{r}
+lplotKnSD2(Hypottowndata21)
+```
+
+### Line Graph-2.2 Current Sickness (symptoms) {.no-padding}
+
+```{r}
+lplotcurSD2(Hypottowndata21)
+```
+
+## Row
+
+### Line Graph-2.3 Sought Health Facility
+```{r}
+lplotsouhfD2(Hypottowndata21)
+```
+
+### Line Graph- 2.4 Main Percieved community health problem (Main_PCHP)
+
+```{r}
+lplotMPCHPD2(Hypottowndata21)
+```
+
+# District 3 Dashboard (The Recent Month)
+
+## Column {.tabset data-width=500}
+
+### Chart -3.1 Sex
+
+```{r}
+piesexd3(Hypottowndata21T)
+```
+
+## Column {data-width=500}
+
+### Chart-3.2 Known Sickness {.no-padding}
+
+```{r}
+barchKnSd3(Hypottowndata21T)
+```
+
+### Chart-3.3 Current Sickness (symptoms) {.no-padding}
+
+```{r}
+barcurSd3(Hypottowndata21T)
+```
+
+## Row
+
+### Chart -3.4 Sought Health Facility
+
+```{r}
+barsouhfd3(Hypottowndata21T)
+```
+
+### Chart - 3.5 Main Percieved community health problem (Main_PCHP)
+
+```{r}
+barMPCHPd3(Hypottowndata21T)
+```
+
+# District 3 Dashboard (Trend)
+
+## Column {.tabset data-width=500}
+
+### Summary Table-3.1
+
+```{r}
+stabD3(Hypottowndata21)
+```
+
+## Column {data-width=500}
+
+### Line Graph-3.1 Known Sickness {.no-padding}
+
+```{r}
+lplotKnSD3(Hypottowndata21)
+```
+
+### Line Graph-3.2 Current Sickness (symptoms) {.no-padding}
+
+```{r}
+lplotcurSD3(Hypottowndata21)
+```
+
+## Row
+
+### Line Graph-3.3 Sought Health Facility
+
+```{r}
+lplotsouhfD3(Hypottowndata21)
+```
+
+### Line Graph- 3.4 Main Percieved community health problem (Main_PCHP)
+
+```{r}
+lplotMPCHPD3(Hypottowndata21)
+```
+
+# Pivot Table
+
+### Pivot Table of the recent month (dateRDLM) community health data of the household members in town X, country X 
+
+```{r}
+pt1(Hypottowndata21T)
+```
+
+# Data Table
+
+### Data Table of longitudinal (long form) Community Health Data of Town-X with its three Districts (named as 1, 2 and 3), Country x, dateRP
+
+```{r}
+mydatatable(Hypottowndata20)
+```
+
+# References {Data-orientation=columns}
+
+## Column {Data-width=100}
+
+### References
+
+1- The Graph Course. EPIREP_EN_parameterizing_reports.Rmd, Accessed on April 30, 2025: (https://thegraphcourses.org/courses/epirep/topics/parametrizing-reports)
+
+2- Batra N., Spina A., Blomquiist P., et al. The Epidemiologist R Handbook, Sep 18, 2024. https://www.epirhandbook.com/en/new_pages/flexdashboard.html
+
+3- https://www.youtube.com/watch?v=_a4S4tq62OE
+
+4- https://www.youtube.com/watch?v=ef8qvUeopN4
+
+5-  Rich, Benjamin.Using the table 1 Package to create HTML tables of DESCRIPTIVE STATISTICS, Accessed on 21/07/2025: https://cran.r-project.org/web/packages/table1/vignettes/table1-examples.html#example-1
+
+6- Stack Over Flow. How to order a ggplot x-axis by a variable containing a date range, Accessed on 18/07/2025: https://stackoverflow.com/questions/69247869/how-to-order-a-ggplot-x-axis-by-a-variable-containing-a-date-range
+
+7- Rich, Benjamin. Package ‘table1’: Tables of Descriptive Statistics in HTML, 2023-01-05. https://github.com/benjaminrich/table1
+
+
+# Contact Me {Data-orientation=columns}
+
+## Column {Data-width=100}
+
+### Contact Me
+
+  - Chernet Hailu (MPH, Assist. Prof (On Retirement))
+  - Email: chernet2013@gmail.com | chernet_mengesha@yahoo.com
