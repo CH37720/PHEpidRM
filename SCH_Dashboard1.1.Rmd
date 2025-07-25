@@ -15,7 +15,7 @@ dateRP: "January - June, 2025"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
-source("https://github.com/CH37720/PHEpidRM/blob/main/SCH_Dashboard1.1.R")
+source("SCH_Dashboard1.1.R")
 
 pacman::p_load(knitr, here, flexdashboard, tidyverse,
                DT, scales, plotly, patchwork,  readr, stringr,
