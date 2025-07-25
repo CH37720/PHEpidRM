@@ -6,7 +6,7 @@ pacman::p_load(knitr, here, flexdashboard, tidyverse,
                viridis, outbreaks, ggrepel, ggthemes, zoo, options(scipen=999),table1)
 
 # Load the dataset
-Hypottowndata20 <- read_csv("../SCH_Dashboard1.1/Hypottowndata20.csv")
+Hypottowndata20 <- read_csv("https://github.com/CH37720/PHEpidRM/edit/main/Hypottowndata20.csv")
 
 #data prep1
 Hypottowndata21 <- Hypottowndata20 %>% mutate(Agegr = cut(Ageyrc, breaks = c(0, 4, 9, 14, 19, 24, 29, 34, 39, 44, 49, 54,59, 64, Inf),
