@@ -1,3 +1,14 @@
+# Title: Simple Community Health Dashboard (SCH_Dashboard)
+
+# Author: Chernet Hailu Mengesha
+
+# The codes or functions shown here are used for the SCH_Dashboard1.1.Rmd.
+
+# You can contact me using my email:
+  # - Chernet Hailu (MPH, Assist. Prof (On Retirement))
+  # - Email: chernet2013@gmail.com | chernet_mengesha@yahoo.com
+  # - Email: chernet2013@gmail.com | chernet_mengesha@yahoo.com
+##################################################################################
 
 pacman::p_load(knitr, here, flexdashboard, tidyverse,
                DT, scales, plotly, patchwork,  readr, stringr,
